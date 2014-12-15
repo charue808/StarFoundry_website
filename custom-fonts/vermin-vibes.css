@@ -1,0 +1,14 @@
+/*
+    Document   : custom-fonts/vermin
+    Created on : 2014-07-19 02:42 AM
+    Author     : jayqueue
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+@font-face {
+font-family: 'vermin-vibes';
+src: url('vermin-vibes-2.otf');
+src: url('vermin-vibes-2.otf');
+}
