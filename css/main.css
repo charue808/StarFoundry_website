@@ -109,14 +109,20 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+
+
 .col-md-4 {
 	padding-bottom: 20px;
 }
 
+
 .row {
 margin-right: 0px;
-margin-left: -15px;
+margin-left:  -15px;
+    
 }
+
+
 
 .modal-header {
 	background: #3498db;
@@ -251,6 +257,10 @@ blockquote cite:before {
 .overflow-image {
     margin-top: -65px;
 }
+
+
+
+
 
 /* Links */
 a {
@@ -629,14 +639,65 @@ a:after {
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
+    /* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages */
+    @media only screen and (min-width:960px){
+        /* styles for browsers larger than 960px; */
+        
+        body .header{background-attachment: scroll;}
+    }
+
+    @media only screen and (min-width:1440px){
+        /* styles for browsers larger than 1440px; */
+        
+        body .header{background-attachment: scroll;}
+        
+    }
+
+    @media only screen and (min-width:2000px){
+        /* for sumo sized (mac) screens */
+         body .header{background-attachment: scroll;}
+        
+         
+    }
+         
+    @media only screen and (max-device-width:480px){
+       /* styles for mobile browsers smaller than 480px; (iPhone) */
+         body .header{background-attachment: scroll;}
+       
+    }
+    @media only screen and (device-width:768px){
+       /* default iPad screens */
+        #headerwrap h1 {
+		font-size: 80px; }
+        
+	    #headerwrap p {
+		font-size: 30px;
+		line-height: 38px; }
+        
+        
+    }
+    /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+        
+        .header{background-attachment: scroll;}
+    }
+
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      /* For landscape layouts only */
+        
+        .header{background-attachment: scroll;}
+    }
 
 
+/*
 @media screen and (max-width:1050px), screen and (max-device-width:1050px){
 	body .header{background-attachment: scroll;}
 }
 
-
-/*ipad portrait*/
+*/
+/*ipad portrait
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
 	.header{background-attachment: scroll;}
 }
@@ -649,4 +710,6 @@ a:after {
 		font-size: 30px;
 		line-height: 38px;
 	}
+   
 }
+*/

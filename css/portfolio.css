@@ -215,7 +215,7 @@ max-width:100%;
 }
 .social-icons a.facebook {
 	background-color: #F2AE72;
-    border-radius:5px
+    border-radius:5px;
 }
 .social-icons a.facebook:hover {
 	background-color: #5a7ec8;
@@ -244,6 +244,15 @@ max-width:100%;
 }
 .social-icons a.rss:hover {
 	background-color: #f38e36;
+}
+
+.social-icons a.email {
+    background-color: #F2AE72;
+    border-radius:5px;
+}
+
+.social-icons a.email:hover {
+    background-color: #FFFF66;
 }
 
 .page-scroll.aboutpscroll {
