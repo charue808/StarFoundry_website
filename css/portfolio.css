@@ -166,8 +166,10 @@ max-width:100%;
 
 
 #courses {
-	background: #ED503D;
+    
+	/*background: #ED503D;*/
 	padding:20px 0 40px 0;
+    background: url(../img/brickwall-red3.jpg) no-repeat bottom center fixed;
 }
 
 #contact iframe {
