@@ -124,6 +124,7 @@ input[type=email]::selection {
 	border-color: #ed503d; border-bottom-color: #fff;
 }
 
+/* Styling for the nav bar menu text */
 .nav > li > a:hover, .nav > li > a:focus {
 	border-color: #ed503d;
 	background-color: #ed503d;
@@ -168,7 +169,7 @@ max-width:100%;
 #courses {
     
 	/*background: #ED503D;*/
-	padding:20px 0 40px 0;
+	padding:30px 0 40px 0;
     background: url(../img/brickwall-red3.jpg) no-repeat bottom center fixed;
 }
 
@@ -410,8 +411,13 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
+
+.navbar-custom .nav li a:focus{
+    background-color: rgba(255,255,255,0);
+    outline: none; 
+}
+
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
  /*    background-color: rgba(255,255,255,.2); */
@@ -420,6 +426,8 @@ a:focus {
    /* MENU HOVER COLOR */ 
    background-color: #F2E394;
 }
+
+
 
 .navbar-toggle {
     padding: 4px 6px;
