@@ -362,6 +362,11 @@ footer {
 	#courses {
 		background: url(../img/brickwall-red3.jpg) no-repeat bottom center fixed;
 	}
+    
+    .contact-container {
+    padding-left: 90px;
+    padding-right: 90px;
+}
 
 }
 
@@ -757,3 +762,5 @@ table.dataTable thead .sorting_desc_disabled {
 .table-striped>tbody>tr:nth-child(even) {
    background-color: white;
  }
+
+
