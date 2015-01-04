@@ -666,7 +666,11 @@ a:focus {
     .modal-open {
         overflow:scroll;
     }
-
+    /*  
+    .courses-container-mobile {
+    padding:10px;
+     } 
+    */    
 	
 }
 
