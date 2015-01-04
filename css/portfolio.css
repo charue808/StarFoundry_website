@@ -363,7 +363,6 @@ footer {
 		background: url(../img/brickwall-red3.jpg) no-repeat bottom center fixed;
 	}
 
-
 }
 
 a {
@@ -663,6 +662,11 @@ a:focus {
 	font-size: 14px;
 	padding-bottom: 30px;
 	}
+    
+    .modal-open {
+        overflow:scroll;
+    }
+
 	
 }
 
