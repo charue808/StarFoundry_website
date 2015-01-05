@@ -366,7 +366,8 @@ footer {
     .contact-container {
     padding-left: 90px;
     padding-right: 90px;
-}
+        padding-top:130px; padding-bottom:5px;
+
 
 }
 
@@ -671,11 +672,13 @@ a:focus {
     .modal-open {
         overflow:scroll;
     }
-    /*  
-    .courses-container-mobile {
-    padding:10px;
-     } 
-    */    
+     
+
+
+
+}
+
+        
 	
 }
 
