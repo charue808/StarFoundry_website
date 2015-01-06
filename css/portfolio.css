@@ -124,6 +124,7 @@ input[type=email]::selection {
 	border-color: #ed503d; border-bottom-color: #fff;
 }
 
+/* Styling for the nav bar menu text */
 .nav > li > a:hover, .nav > li > a:focus {
 	border-color: #ed503d;
 	background-color: #ed503d;
@@ -270,6 +271,16 @@ max-width:100%;
     color: #fff;
 }
 
+.modal-open {
+overflow:hidden;
+margin:fixed; 
+overflow-y:auto;
+}
+
+.fade {
+margin-right:-20px; 
+    /* corrects error with the scroll bar re-adjusting on modal pop up */
+}
 
 /*courses*/
 .flat .courses {
@@ -351,7 +362,12 @@ footer {
 	#courses {
 		background: url(../img/brickwall-red3.jpg) no-repeat bottom center fixed;
 	}
-
+    
+    .contact-container {
+    padding-left: 90px;
+    padding-right: 90px;
+    }
+    
 
 }
 
@@ -400,8 +416,13 @@ a:focus {
     transition: background .3s ease-in-out;
 }
 
+
+.navbar-custom .nav li a:focus{
+    background-color: rgba(255,255,255,0);
+    outline: none; 
+}
+
 .navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
  /*    background-color: rgba(255,255,255,.2); */
@@ -410,6 +431,8 @@ a:focus {
    /* MENU HOVER COLOR */ 
    background-color: #F2E394;
 }
+
+
 
 .navbar-toggle {
     padding: 4px 6px;
@@ -645,8 +668,20 @@ a:focus {
 	font-size: 14px;
 	padding-bottom: 30px;
 	}
-	
+    
+    .modal-open {
+        overflow:scroll;
+    }
+    
+    #contact>div>div{
+        margin-left: 30px; 
+        margin-right: 30px;
+        
+    }
+    
 }
+
+       
 
 ::-moz-selection {
     text-shadow: none;
@@ -731,3 +766,5 @@ table.dataTable thead .sorting_desc_disabled {
 .table-striped>tbody>tr:nth-child(even) {
    background-color: white;
  }
+
+
