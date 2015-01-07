@@ -230,6 +230,10 @@ max-width:100%;
 .social-icons a.twitter:hover {
 	background-color: #1bb2e9;
 }
+.social-icons a.google {
+    background-color: #F2AE72;
+    border-radius: 5px;
+}
 .social-icons a.google:hover {
 	background-color: #f4270c;
 }
@@ -238,6 +242,10 @@ max-width:100%;
 }
 .social-icons a.pinterest:hover {
 	background-color: #ca2128;
+}
+.social-icons a.instagram {
+    background-color: #F2AE72;
+    border-radius: 5px;
 }
 .social-icons a.instagram:hover {
 	background-color: #9e795e;
