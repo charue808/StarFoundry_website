@@ -1,0 +1,340 @@
+/*
+    Document   : css/activeCampaign
+    Created on : 2015-01-08 09:12 AM
+    Author     : charue808
+    Description: To be used by the Active Campaign Forms
+ 
+    To change this template use Tools | Templates.
+*/
+
+._form {
+  position:relative;
+  background:#fff;
+  width:400px;/*F*/
+  padding:0!important;
+  text-align:left;
+  }
+  ._form em {
+  color:#9a9a9a;
+  }
+  ._form a {
+  margin-left:3px;
+  }
+  ._form ._field,
+  ._form ._field ._label,
+  ._form ._type_radio,
+  ._form ._type_checkbox,
+  ._form ._type_captcha,
+  ._form ._field table {
+  background:none;
+  }
+  ._form ._field  {
+  position:relative;
+  width:100%;
+  cursor:move;
+  font-style:normal;
+  margin:1.2em 0;
+  padding:0;
+  overflow:hidden;
+  }
+  ._form ._field input[type="text"] {
+  width:95%;
+  padding:8px;
+  font-size:16px;
+  border:1px solid #b6b6b6;
+  }
+  ._form ._field ._label {
+  display:block;
+  margin:0 0 0.5em;
+  padding:0!important;
+  font-size:15px;
+  }
+  ._form ._field ._option input[type="checkbox"],
+  ._form ._field ._option input[type="radio"] {
+  position:relative;
+  width:13px;
+  height:13px;
+  margin:-4px 0 0 1px;
+  cursor:pointer;
+  vertical-align:middle;
+  }
+  ._form ._field ._option input[type="submit"],
+  ._form ._field ._option input[type="button"] {
+  margin:0;
+  cursor:pointer;
+  height:35px;
+  width:auto;
+  font-size:15px;
+  }
+  ._form ._field ._option select {
+  display:block;
+  margin:0;
+  padding:0;
+  width:auto;
+  font-size:15px;
+  border:1px solid #b6b6b6;
+  }
+  ._form ._type_radio ._option,
+  ._form ._type_checkbox ._option {
+  font-size:13px;
+  font-weight:normal;
+  line-height:1.8;
+  }
+  ._form ._type_date ._option input[type="text"] {
+  float:left;
+  width:100px;
+  }
+  ._form ._type_date ._option input[type="button"] {
+  width:37px;
+  height:36px;
+  margin-left:5px;
+  padding:20px;
+  background:url(https://starfoundry.activehosted.com/admin/css/../images/icon_calendar.gif) no-repeat 0 0;
+  border:none;
+  outline:none;
+  text-indent:-9999px;
+  }
+  ._form ._type_captcha img {
+  float:left;
+  margin:0 6px 0 0;
+  width:70px;
+  height:33px;
+  border:1px solid #b6b6b6;
+  }
+  ._form ._type_captcha input[type="text"] {
+  margin:-14px 0 0 0!important;
+  width:25%;
+  }
+  ._form ._field table  {
+  width:100%!important;
+  }
+  ._form ._field table tbody tr td  {
+  width:50%!important;
+  font-size:15px;
+  }
+  @import url(http://fonts.googleapis.com/css?family=PT+Sans);
+  ._form {
+  margin:0;
+  padding:0px!important;
+  background:#f0f0f0;
+  color:#2c2c2c;
+  font-weight:normal;
+  text-shadow:1px 1px 1px #fff;
+  }
+  ._form #notice {
+  margin:!important;
+  padding:0 0 3px!important;
+  color:#acacac;
+  font-size:11px;
+  font-family:helvetica,arial,sans-serif;
+  }
+  ._form #notice a:link, ._form #notice a:visited {
+  color:#acacac;
+  text-decoration:underline;
+  }
+  /* ========================= start header/footer*/
+  .formwrapper {
+  width:auto;
+  margin:0px!important;
+  padding:10px 20px 3px!important;
+  background:#f0f0f0;
+  border-left:1px solid #dedede;
+  border-right:1px solid #dedede;
+  }
+  .formwraptop {
+  margin:0px!important;
+  padding:0px!important;
+  height:5px;
+  }
+  .formwraptop .topleft {
+  float:left;
+  height:5px;
+  width:20px;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_form_top_left.png) no-repeat top left;
+  }
+  .formwraptop .topbg {
+  height:5px;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_form_top_bg.png) no-repeat top right;
+  }
+  .formwrapbottom {
+  margin:0px!important;
+  padding:0px!important;
+  height:5px;
+  }
+  .formwrapbottom .bottomleft {
+  float:left;
+  height:5px;
+  width:20px;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_form_bottom_left.png) no-repeat bottom left;
+  }
+  .formwrapbottom .bottombg {
+  height:5px;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_form_bottom_bg.png) no-repeat bottom right;
+  }
+  /* ========================= end header/footer*/
+  ._form ._field,
+  ._form ._field ._label,
+  ._form ._type_radio,
+  ._form ._type_checkbox,
+  ._form ._type_captcha,
+  ._form ._field table {
+  background:none;
+  }
+  ._form ._field  {
+  position:relative;
+  width:100%;
+  cursor:default;
+  font-style:normal;
+  margin:0 0 16px!important;
+  padding:0!important;
+  overflow:hidden;
+  }
+  ._form ._field input[type="text"],
+  ._form ._field input[type="email"] {
+  width:97%;
+  margin:0!important;
+  padding:4px!important;
+  font-size:18px;
+  border:1px solid #d7d7d7;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_input.gif) repeat-x top left;
+  }
+  ._form ._field ._label {
+  margin:0 0 0.3em!important;
+  color:#202020;
+  font-size:14px;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:400;
+  }
+  ._form ._field ._option {
+  margin:0;
+  padding:0;
+  color:#202020;
+  font-size:13px;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:normal;
+  line-height:20px;
+  }
+  ._form ._type_header ._label {
+  width:100%;
+  font-style:normal;
+  font-size:26px!important;
+  line-height:34px;
+  font-family:'PT Sans',arial,serif;
+  font-weight:700;
+  color:#202020;
+  margin:0 0 10px!important;
+  padding:0 0 10px!important;
+  overflow:hidden;
+  background:transparent url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_hdr_line.gif) repeat-x bottom left;
+  }
+  ._form ._type_input ._option textarea{
+  padding:2px!important;
+  width:97%!important;
+  background:#fff url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_input.gif) repeat-x top left;
+  border:1px solid #d7d7d7;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  }
+  ._form ._field ._option input[type="submit"],
+  ._form ._field ._option input[type="button"] {
+  width:auto;
+  height:48px;
+  margin:10px 0 0!important;
+  padding:8px 32px 8px 15px!important;
+  cursor:pointer;
+  font-family:helvetica,arial,sans-serif;
+  font-weight:700;
+  font-size:14px;
+  color:#fff;
+  background:#f2b103 url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/bg_submit_btn.gif) repeat-x top right;
+  border:1px solid #b97e00;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+  text-shadow:1px 1px 1px #ca9300;
+  }
+  ._form ._type_radio ._option label {
+  display:inline;
+  font-size:14px;
+  font-weight:normal;
+  line-height:18px;
+  }
+  ._form ._type_radio ._option label input[type="radio"] {
+  position:relative;
+  width:13px;
+  height:13px;
+  margin:-4px 0 0 1px!important;
+  cursor:pointer;
+  vertical-align:middle;
+  border:none;
+  line-height:18px;
+  }
+  ._form ._type_date ._option input[type="text"] {
+  float:left;
+  width:100px;
+  font-size:18px;
+  }
+  ._form ._type_date ._option input[type="button"] {
+  float:left;
+  width:27px;
+  height:27px;
+  margin:0 0 0 5px!important;
+  padding:0;
+  background:url(https://starfoundry.activehosted.com/admin/templates/form-themes/grey/images/icon_calendar.gif) no-repeat;
+  border:none;
+  outline:none;
+  text-indent:-9999px;
+  }
+  ._form ._field ._option select {
+  display:block;
+  margin:0;
+  padding:0;
+  width:auto;
+  font-size:18px;
+  border:1px solid #d7d7d7;
+  }
+  ._form ._type_captcha img {
+  float:left;
+  width:88px;
+  height:44px;
+  margin:0 6px 0 0;
+  border:1px solid #d7d7d7;
+  }
+  ._form ._type_captcha input[type="text"] {
+  margin:0!important;
+  width:40%;
+  font-size:18px;
+  }
+  ._form ._field table {
+  margin:0;
+  padding:0;
+  border-collapse:collapse;
+  width:100%!important;
+  table-layout:fixed;
+  margin-bottom:18px;
+  font-size:12px!important;
+  border-collapse:collapse;
+  border-spacing:0;
+  }
+  ._form ._field table td {
+  padding:0 10px 0 0!important;
+  line-height:18px;
+  text-align:left;
+  font-size:12px!important;
+  color:#606060;
+  }
+  ._form ._type_input ._option  table tbody#_forward_rcpt input {margin:0 0 5px 0!important; width:96%!important;}
+  ._form ._type_input ._option  table tbody#_forward_rcpt img.image_addrcpt {cursor:pointer;}
+  .form_errors{
+  text-align:center;
+  font-size:15px;
+  margin:10px;
+  color:#900;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  margin-bottom:20px;
+  }
