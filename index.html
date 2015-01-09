@@ -958,14 +958,14 @@ hr.style-one {
     
 
 <!-- COURSES MODAL START -->
-            <!-- Tinkering with Twitter COURSE modal START -->
+            <!-- Change Maker modal START -->
                
                 <div class="modal fade" id="countdownToLaunchModal" tabindex="-1" role="dialog" aria-labelledby="countdownToLaunchLabel" aria-hidden="true">
                   <div class="modal-dialog" style="width:85%; ">
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h2 class="modal-title" id="countdownToLaunchLabel" style="font-size:2.5em; color:#59acd9">Tinkering with Twitter</h2>
+                          <h2 class="modal-title" id="countdownToLaunchLabel" style="font-size:2.5em; color:#59acd9">New Title</h2>
                       </div>
                       <div class="modal-body text-center" style="color:black; font-family:Helvetica;">
                           
@@ -1093,9 +1093,20 @@ hr.style-one {
                     </div>
                   </div>
                 </div>
-
-            <!-- Tinkering with Twitter modal END -->
     
+    <script type='text/javascript'>
+    $('#countdownToLaunchModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var title = button.data('name') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text(title)
+    })
+    </script>
+
+            <!-- Change Maker modal END -->
+                
 <!-- COURSES MODAL END -->
     
     <!-- Courses MODAL MOBILE START -->
@@ -1587,7 +1598,7 @@ hr.style-one {
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <button data-toggle="modal" data-target="#countdownToLaunchModal" class="pure-button" style="
+                                                <button type="button" data-toggle="modal" data-target="#countdownToLaunchModal" data-name="Tinkering with Twitter" class="pure-button" style="
                                                                                                                                              width: 100%;
                                                                                                                                              color: white;
                                                                                                                                              font-size: 1.3em;
@@ -1673,14 +1684,14 @@ hr.style-one {
 
                                         <tr>
                                             <td > 
-                                                <button data-toggle="modal" data-target="#countdownToLaunchModal" class="pure-button" style="
+                                                <button data-toggle="modal" data-target="#countdownToLaunchModal" data-name="Rapid-Prototyping Fundamentals" class="pure-button" style="
                                                                                                                                              width: 100%;
                                                                                                                                              color: white;
                                                                                                                                              font-size: 1.3em;
                                                                                                                                              border-radius: 4px;
                                                                                                                                              text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
                                                                                                                                              background: #F2AE72; /* this is a light orange */">
-                                                    Munch & Make Workshops
+                                                    Rapid-Prototyping Fundamentals
                                                 </button>
                                             </td>
                                             <td> Honolulu, HI </td>
