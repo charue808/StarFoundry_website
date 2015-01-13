@@ -2566,22 +2566,28 @@ hr.style-one {
                       </div>
                       <div class="modal-body text-center" style="color: black; font-family:Helevectia">
                         <span style="padding-left:45px; padding-right:25px; display:block; text-align:left">
-                            <form>
+                            <form class="form" role="form" method="post" action="//starfoundry.activehosted.com/proc.php" id="_form_1013" accept-charset="utf-8" enctype="multipart/form-data">
+                                <input type="hidden" name="f" value="1013">
+                                <input type="hidden" name="s" value="">
+                                <input type="hidden" name="c" value="0">
+                                <input type="hidden" name="m" value="0">
+                                <input type="hidden" name="act" value="sub">
+                                <input type="hidden" name="nlbox[]" value="1">
                                 <div class="form-group">
                                     <label for="contactName">Name</label>
-                                    <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+                                    <input type="text" class="form-control" name="fullname" id="contactName" placeholder="Enter your name">
                                 </div>
                                 <div class="form-group">
                                     <label for="contactEmail">Email</label>
-                                    <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+                                    <input type="email" class="form-control" name="email" id="contactEmail" placeholder="Enter your email">
                                 </div>
                                 <div class="form-group">
                                     <label for="contactPhone">Phone Number</label>
-                                    <input type="text" class="form-control" id="contactPhone" placeholder="If you'd perfer a follow up call, enter your phone number">
+                                    <input type="text" class="form-control" name="phone" id="contactPhone" placeholder="If you prefer a follow up call, enter your phone number">
                                 </div>
                                 <div class="form-group">
                                     <label for="contactMessage">Enter Message</label>
-                                   <textarea id="contactMessage" class="form-control" rows="10"></textarea>
+                                   <textarea name="field[2]"id="contactMessage" class="form-control" rows="10"></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary" style="border-color:#42b8dd; background-color:#42b8dd;">
                                     Submit
@@ -2656,7 +2662,7 @@ hr.style-one {
             
 		});
     </script>
-    
+  
 
     
     
