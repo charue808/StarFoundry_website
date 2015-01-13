@@ -207,10 +207,34 @@ max-width:100%;
 	color: #fff;
 }
 
+.social-icons button {
+    display: block; 
+	float: left;
+	width: 60px;
+	padding: 5px 0;
+	margin-right: 2px;
+	margin-top:5px;
+	background-color: #000;
+	font-size:26px;
+	text-align:center;
+	color: #fff;
+}
+
 /*Social Icons Small*/
 .social-icons.small a {
 	width: 55px;
+    height: 41px;
 	font-size: 22px;
+    border-radius: 5px;
+}
+
+.social-icons.small button {
+    width: 55px;
+    height: 41px;
+    font-size: 22px;
+    border-radius: 5px;
+    border-color: #F2AE72;
+    
 }
 
 .social-icons a:hover {
@@ -218,44 +242,65 @@ max-width:100%;
 }
 .social-icons a.facebook {
 	background-color: #F2AE72;
-    border-radius:5px;
+    
 }
 .social-icons a.facebook:hover {
 	background-color: #5a7ec8;
 }
 .social-icons a.twitter {
 	background-color: #F2AE72;
-    border-radius: 5px;
+   
 }
 .social-icons a.twitter:hover {
 	background-color: #1bb2e9;
 }
+.social-icons a.google {
+    background-color: #F2AE72;
+   
+}
 .social-icons a.google:hover {
 	background-color: #f4270c;
+}
+.social-icons a.linkedin {
+    background-color: #F2AE72;
 }
 .social-icons a.linkedin:hover {
 	background-color: #1982af;
 }
+.social-icons a.pinterest {
+    background-color: #F2AE72;
+}
 .social-icons a.pinterest:hover {
 	background-color: #ca2128;
+}
+.social-icons a.instagram {
+    background-color:#F2AE72;
 }
 .social-icons a.instagram:hover {
 	background-color: #9e795e;
 }
+.social-icons a.youtube {
+    background-color: #F2AE72;
+}
 .social-icons a.youtube:hover {
 	background-color: #c52f30;
+}
+.social-icons a.rss {
+    background-color: #F2AE72;
 }
 .social-icons a.rss:hover {
 	background-color: #f38e36;
 }
 
-.social-icons a.email {
+.social-icons button.btn {
     background-color: #F2AE72;
-    border-radius:5px;
+    border-color: #F2AE72;
+    
 }
 
-.social-icons a.email:hover {
-    background-color: #FFFF66;
+.social-icons button.btn:hover {
+    background-color: #F2AE72;
+    border-color: #F2AE72;
 }
 
 .page-scroll.aboutpscroll {
