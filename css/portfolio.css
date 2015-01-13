@@ -297,7 +297,7 @@ max-width:100%;
     border-color: #F2AE72;
     
 }
-
+.social-icons button.btn:focus,
 .social-icons button.btn:hover {
     background-color: #488627;
     border-color: #488627;
