@@ -786,4 +786,15 @@ table.dataTable thead .sorting_desc_disabled {
    background-color: white;
  }
 
-
+.preview_part #notice {
+    margin: 10px 0 0 -3!important;
+    padding: 10px 0 0 0;
+    color: #959c9f;
+    font-size: 11px;
+    font-family: helevetica, arial, sans-serif;
+}
+.preview_part #notice a,
+.preview_part #notice a:visited{
+    color: #959c9f;
+    text-decoration: underline;
+}
