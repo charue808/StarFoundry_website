@@ -628,7 +628,7 @@ hr.style-one {
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h2 class="modal-title" id="companyContactModalLabel" style="font-size:2.5em; color:#59acd9">Reservations</h2>
+                          <h2 class="modal-title" id="companyContactModalLabel" style="font-size:2.5em; color:#59acd9">Reserve a Class</h2>
                       </div>
                       <div class="modal-body text-center" style="color: black; font-family:Helevectia">
                         <span style="padding-left:45px; padding-right:25px; display:block; text-align:left">
@@ -640,6 +640,14 @@ hr.style-one {
                                 <input type="hidden" name="m" value="0">
                                 <input type="hidden" name="act" value="sub">
                                 <input type="hidden" name="nlbox[]" value="1">
+                                 <div class="form-group">
+                                    <div id="_field108">
+                                        <div id="compile108">
+                                            <label for="contactOrg">Organization</label>
+                                            <input type="text" class="form-control" name="org" id="contactOrg">
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <div id="_field105">
                                         <div id="compile105">
@@ -648,14 +656,7 @@ hr.style-one {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <div id="_field108">
-                                        <div id="compile108">
-                                            <label for="contactOrg">Organization</label>
-                                            <input type="text" class="form-control" name="org" id="contactOrg">
-                                        </div>
-                                    </div>
-                                </div>
+                               
                                 <div class="form-group">
                                     <div id="_field106">
                                         <div id="compile106">
@@ -675,7 +676,7 @@ hr.style-one {
                                 <div class="form-group">
                                     <div id="_field111">
                                         <div id="compile111">
-                                            <label for="courseSelect">I'm interested in...</label>
+                                            <label for="courseSelect">I'm interested in hosting the following class at my organization:</label>
                                             <select id="courseSelect" class="form-control" name="field[8]">
                                                 <option value="Rapid Prototyping for Developers">Rapid Prototyping for Developers</option>
                                                 <option value="Rapid Prototyping for MBAs">Rapid Prototyping for MBAs</option>
@@ -687,16 +688,16 @@ hr.style-one {
                                 <div class="form-group">
                                     <div id="_field116">
                                         <div id="compile116">
-                                            <label for="participantNum">Approximate number of participants</label>
+                                            <label for="participantNum">Estimated number of participants</label>
                                             <input type="text" class="form-control" id="participantNum" name="field[11]" value="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div id="_field117">
-                                        <div id="compile117">
-                                            <label for="courseLocation">Course location</label>
-                                            <input type="text" class="form-control" id="courseLocation" name="field[12]" value="">
+                                    <div id="_field119">
+                                        <div id="compile119">
+                                            <label for="ETF">Estimated time frame</label>
+                                            <input type="text" class="form-control" id="ETF" name="field[13]" value="">
                                         </div>
                                     </div>
                                 </div>
@@ -715,12 +716,7 @@ hr.style-one {
                                         </button>
                                     </div>
                                 </div>
-                                <div class="preview_part">
-                                    <div id="notice">
-                                        <a href="http://www.activecampaign.com/" title="email marketing" target="_blank">email marketing</a>
-                                        by active campaign
-                                    </div>
-                                </div>
+                               
                             </form>
                         </span>
                       </div>
@@ -790,12 +786,7 @@ hr.style-one {
                                         </button>
                                     </div>
                                 </div>
-                                <div class="preview_part">
-                                    <div id="notice">
-                                        <a href="http://www.activecampaign.com/" title="email marketing" target="_blank">email marketing</a>
-                                        by active campaign
-                                    </div>
-                                </div>
+                                
                             </form>
                         </span>
                       </div>
@@ -2357,7 +2348,7 @@ hr.style-one {
                         <br/>
                         <!-- Company Courses pure-form Start -->
                         <div class="pure-form pure-form-stacked">
-                            <legend style="color:#59acd9;font-size:2.5em; text-align:left"><b>Company</b> <span style="color:white;">Courses</span></legend>
+                            <legend style="color:#59acd9;font-size:2.5em; text-align:left"><b>On-site</b> <span style="color:white;">Courses</span></legend>
                             <p> There are several organization types that can reap the benefits of our rapid-launch courses: </p>
                             <ul style="font-size:1.2em;">
                                 <li> <b>Large Organizations</b>, who are interested in giving their developers the edge with advanced prototyping skills </li>
@@ -2586,11 +2577,6 @@ hr.style-one {
                                                 <input class="btn btn-primary" type="submit" id="compile66" value="subscribe" style="border-color:#42b8dd; background-color:#42b8dd">
                                                 </span>
                                             </div>
-                                         <div class="preview_part" style="margin-left:5px">
-                                             <div id="notice">
-                                                 <a href="http://www.activecampaign.com/" title="email marketing" target="_blank">email marketing</a> by activecampaign
-                                             </div>
-                                        </div>
                                     </div>
                                </div> <!-- End of Join the Event List row--> 
                           </div>  
@@ -2602,12 +2588,12 @@ hr.style-one {
                                             <a target="_blank" href="https://facebook.com/thestarfoundry" rel="tooltip" title="Like us on Facebook" class="facebook"><i class="fa fa-facebook"> &nbsp;&nbsp;&nbsp; </i></a>
                                             <a target="_blank" href="https://twitter.com/thestarfoundry" rel="tooltip" title="Follow us on Twitter" class="twitter"><i class="fa fa-twitter"></i></a>
                                            
-                                            <a href="#" rel="tooltip" title="Follow us on Google+" class="google"><i class="fa fa-google-plus"></i></a>
-                                            <a href="#" rel="tooltip" title="Follow us on LinkedIn" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                                            <a href="#" rel="tooltip" title="View us on Pinterest" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                                            <a href="#" rel="tooltip" title="Follow us on Google+" class="hidden-xs google"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#" rel="tooltip" title="Follow us on LinkedIn" class="hidden-xs linkedin"><i class="fa fa-linkedin"></i></a>
+                                            <a href="#" rel="tooltip" title="View us on Pinterest" class="hidden-xs pinterest"><i class="fa fa-pinterest"></i></a>
                                             <a href="#" rel="tooltip" title="Follow us on Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
-                                            <a href="#" rel="tooltip" title="View our YouTube Channel" class="youtube"><i class="fa fa-youtube"></i></a>
-                                            <a href="#" rel="tooltip" title="Fork on GitHub" class="rss"><i class="fa fa-github"></i></a>
+                                            <a href="#" rel="tooltip" title="View our YouTube Channel" class="hidden-xs youtube"><i class="fa fa-youtube"></i></a>
+                                            <a href="#" rel="tooltip" title="Fork on GitHub" class="hidden-xs rss"><i class="fa fa-github"></i></a>
                                             <button type="button" rel="tooltip" title="Contact Us" class="btn btn-primary" data-toggle="modal" data-target="#contactUsModal">
                                                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                                             </button>
