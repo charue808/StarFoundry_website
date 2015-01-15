@@ -786,6 +786,10 @@ table.dataTable thead .sorting_desc_disabled {
    background-color: white;
  }
 
+/* Active campaign form */
+
+
+
 .preview_part #notice {
     margin: 10px 0 0 -3!important;
     padding: 10px 0 0 0;
@@ -798,3 +802,4 @@ table.dataTable thead .sorting_desc_disabled {
     color: #959c9f;
     text-decoration: underline;
 }
+
