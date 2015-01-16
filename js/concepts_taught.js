@@ -1,6 +1,15 @@
+/*
+ * For great examples of highcharts:
+ * http://jsfiddle.net/zaheerahmed/7xEhW/
+ * http://jsfiddle.net/KNFJE/36/
+ */
+
 
 $(function () {
-
+    Highcharts.setOptions({
+     colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',  '#6AF9C4']
+    });
+    
     // Create the chart
     $('#concepts_taught_twt').highcharts({
         chart: {
@@ -12,7 +21,10 @@ $(function () {
             
         },
         title: {
-            text: 'Basic drilldown'
+            text: 'Concepts Taught'
+        },
+        tooltip: {
+            enabled:false
         },
         xAxis: {
             type: 'category'
@@ -33,117 +45,48 @@ $(function () {
 
         series: [{
             type: 'pie',
-            name: 'Things',
+            name: 'Main Concepts',
             colorByPoint: true,
             data: [{
-                name: 'Animals',
-                y: 5,
-                drilldown: 'animals'
-            }, {
-                name: 'Fruits',
+                name: 'Business',
                 y: 2,
-                drilldown: 'fruits'
+                drilldown: 'businessConcepts'
             }, {
-                name: 'Cars',
-                y: 4,
-                drilldown: 'cars'
+                name: 'Coding',
+                y: 5,
+                drilldown: 'codingConcepts'
+            }, {
+                name: 'Design',
+                y: 3,
+                drilldown: 'designConcepts'
             }]
         }],
         drilldown: {
             series: [{
-                id: 'animals',
+                id: 'businessConcepts',
                 data: [
-                    ['Cats', 4],
-                    ['Dogs', 2],
-                    ['Cows', 1],
-                    ['Sheep', 2],
-                    ['Pigs', 1]
+                    {name:'Identifying Your Value Proposition', y:1, color: 'orange'},
+                    {name:'Marketing Your Product', y: 1, color: 'gray' }
                 ]
             }, {
-                id: 'fruits',
+                id: 'codingConcepts',
                 data: [
-                    ['Apples', 4],
-                    ['Oranges', 2]
+                    
+                    {name:'Modern Mock-Up Tools', y:1, color: 'grey'},
+                    {name:'Launching a live site', y:1, color: 'orange'},
+                    {name:'Working with web visuals', y:1, color: 'blue'},
+                    {name:'Implementing a user accounts system', y:1, color: 'green'},
+                    {name:'Storing, retrieving, and displaying database data', y:1, color: 'purple'},
+
                 ]
+                
             }, {
-                id: 'cars',
+                id: 'designConcepts',
                 data: [
-                    ['Toyota', 4],
-                    ['Opel', 2],
-                    ['Volkswagen', 2]
-                ]
-            }]
-        }
-    });
-});
+                    {name:'Basic Mock-Up Principles', y:1, color: 'orange'},
+                    {name:'Managing user experiences', y:1, color: 'blue'},
+                    {name:'Beautifying with bootstrap', y:1, color: 'green'},
 
-$(function () {
-
-    // Create the chart
-    $('#concepts_taught_twt2').highcharts({
-        chart: {
-            type: 'pie'
-        },
-        title: {
-            text: 'Basic drilldown'
-        },
-        xAxis: {
-            type: 'category'
-        },
-
-        legend: {
-            enabled: false
-        },
-
-        plotOptions: {
-            series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true
-                }
-            }
-        },
-
-        series: [{
-            type: 'pie',
-            name: 'Things',
-            colorByPoint: true,
-            data: [{
-                name: 'Animals',
-                y: 5,
-                drilldown: 'animals'
-            }, {
-                name: 'Fruits',
-                y: 2,
-                drilldown: 'fruits'
-            }, {
-                name: 'Cars',
-                y: 4,
-                drilldown: 'cars'
-            }]
-        }],
-        drilldown: {
-            series: [{
-                id: 'animals',
-                data: [
-                    ['Cats', 4],
-                    ['Dogs', 2],
-                    ['Cows', 1],
-                    ['Sheep', 2],
-                    ['Pigs', 1]
-                ]
-            }, {
-                id: 'fruits',
-                data: [
-                    ['Apples', 4],
-                    ['Oranges', 2]
-                ]
-            }, {
-                id: 'cars',
-                data: [
-                    ['Toyota', 4],
-                    ['Opel', 2],
-                    ['Volkswagen', 2]
                 ]
             }]
         }
