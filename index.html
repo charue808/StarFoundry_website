@@ -1420,7 +1420,7 @@ hr.style-one {
                               </style>
                               
                               <h3 class="dialogSubheader">Requirements</h3>
-                              <p>
+                              <p id="studentReq">
                                   Level 1 and 2 completed - Level UP!
                               </p>
 
@@ -1902,7 +1902,12 @@ hr.style-one {
                                     <tbody>
                                         <tr >
                                             <td> 
-                                                <button data-toggle="modal" data-target="#countdownToLaunchModal" data-name="Global Dreamers Institute - Summer 2015" class="pure-button" style="
+                                                <button data-toggle="modal" data-target="#countdownToLaunchModal" data-name="Global Dreamers Institute - Summer 2015" 
+                                                        data-req="Students in Grades 8 - 12 residing on Oahu"
+                                                        
+                                                        
+                                                        
+                                                        class="pure-button" style="
                                                                                                                                              width: 100%;
                                                                                                                                              color: white;
                                                                                                                                              font-size: 1.3em;
@@ -2185,11 +2190,13 @@ hr.style-one {
             
             $('#countdownToLaunchModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
-  var title = button.data('name') // Extract info from data-* attributes
+  var title = button.data('name')
+  var requirement = button.data('req') // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
   var modal = $(this)
   modal.find('.modal-title').text(title)
+  modal.find('.modal-body p').text(requirement)
 });
             
              $('#communityCourses').dataTable(
