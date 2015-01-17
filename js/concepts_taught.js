@@ -3,15 +3,13 @@
  * http://jsfiddle.net/zaheerahmed/7xEhW/
  * http://jsfiddle.net/KNFJE/36/
  */
+function destroyChart(container){
+    $(container).highcharts().destroy();
+}
 
-
-$(function () {
-    Highcharts.setOptions({
-     colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',  '#6AF9C4']
-    });
-    
+function drawChart(container){
     // Create the chart
-    $('#concepts_taught_twt').highcharts({
+    $(container).highcharts({
         chart: {
             type: 'pie',
             backgroundColor:'rgba(255, 255, 255, 0.1)'
@@ -91,4 +89,32 @@ $(function () {
             }]
         }
     });
+}
+
+// This is run on page load
+//
+$(function () {
+  //  Highcharts.setOptions({
+  //   colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',  '#6AF9C4']
+  //  });
+  
+    tinkeringWithTwitterConcepts = {};
+    
+    tinkeringWithTwitterConcepts.business = [];
+    
+    tinkeringWithTwitterConcepts.business.push({name:'Identifying Your Value Proposition', y:1, color: 'orange'});
+    
+    tinkeringWithTwitterConcepts.coding = [];
+    tinkeringWithTwitterConcepts.design = [];
+    
+
+    $('#tinkeringWithTwitterModal').on('shown.bs.modal', function (e) {
+       drawChart('#concepts_taught_twt_container');
+    })
+    
+    $('#tinkeringWithTwitterModal').on('hidden.bs.modal', function (e) {
+       destroyChart('#concepts_taught_twt_container');
+    })
+    
+    
 });
