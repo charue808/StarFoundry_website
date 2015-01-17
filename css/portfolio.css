@@ -184,6 +184,10 @@ max-width:100%;
     
 }
 
+#courses table thead {
+    background: rgba(242,227,148,0.95);
+}
+
 #contact iframe {
 	border: 5px solid #ed503d	
 }
