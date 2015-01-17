@@ -8,6 +8,15 @@ function destroyChart(container){
 }
 
 function drawChart(container){
+    dataLabelStyle = 
+        { 
+        fontWeight: 'bold', 
+        fontSize:'18px',  
+        width: '150px'
+    };
+    
+     var $conceptReporting = $('#conceptReporting');
+    
     // Create the chart
     $(container).highcharts({
         chart: {
@@ -19,10 +28,21 @@ function drawChart(container){
             
         },
         title: {
-            text: 'Concepts Taught'
+            text:null,
+            style: {
+                fontSize:'28px',
+                paddingBottom:'60px'
+            }
         },
         tooltip: {
-            enabled:false
+            enabled:false,
+            formatter: function () {
+                var s = '<b>' + this.point.name + '</b>';
+
+                return s;
+            },
+            style: dataLabelStyle
+           
         },
         xAxis: {
             type: 'category'
@@ -36,8 +56,27 @@ function drawChart(container){
             series: {
                 borderWidth: 0,
                 dataLabels: {
-                    enabled: true
+                    enabled: false,
+                    style: dataLabelStyle,
+                },
+                
+                
+                 point: {
+                    events: {
+                        mouseOver: function () {
+                            $conceptReporting.html(this.name);
+                        }
+                    }
+                },
+                events: {
+                    mouseOut: function () {
+                       // $conceptReporting.empty();
+                        $conceptReporting.html('<i>(Select a Slice to View Details)</i>');
+
+                    }
                 }
+            
+                
             }
         },
 
@@ -48,16 +87,28 @@ function drawChart(container){
             data: [{
                 name: 'Business',
                 y: 2,
-                drilldown: 'businessConcepts'
+                drilldown: 'businessConcepts',
+               // dataLabels:{
+                //    enabled:false
+               // }
             }, {
                 name: 'Coding',
                 y: 5,
-                drilldown: 'codingConcepts'
+                drilldown: 'codingConcepts',
+               // dataLabels:{
+               //     enabled:false
+               // }
             }, {
                 name: 'Design',
                 y: 3,
                 drilldown: 'designConcepts'
+              //  dataLabels:{
+              //      enabled:false
+              //  }
             }]
+           
+            
+            
         }],
         drilldown: {
             series: [{
@@ -65,6 +116,7 @@ function drawChart(container){
                 data: [
                     {name:'Identifying Your Value Proposition', y:1, color: 'orange'},
                     {name:'Marketing Your Product', y: 1, color: 'gray' }
+                    
                 ]
             }, {
                 id: 'codingConcepts',
