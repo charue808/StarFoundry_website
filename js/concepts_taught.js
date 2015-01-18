@@ -7,6 +7,11 @@ function destroyChart(container){
     $(container).highcharts().destroy();
 }
 
+
+
+
+
+
 function drawChart(container){
     dataLabelStyle = 
         { 
@@ -35,9 +40,16 @@ function drawChart(container){
             }
         },
         tooltip: {
-            enabled:false,
+            enabled:true,
             formatter: function () {
-                var s = '<b>' + this.point.name + '</b>';
+                var numExercises = this.point.y;
+                var outputText = " workshop exercises";
+                
+                if (numExercises <= 1) 
+                {
+                    outputText = " workshop exercise"
+                }
+                var s = '<b>' + numExercises + outputText + '</b>';
 
                 return s;
             },
@@ -85,26 +97,26 @@ function drawChart(container){
             name: 'Main Concepts',
             colorByPoint: true,
             data: [{
-                name: 'Business',
-                y: 2,
-                drilldown: 'businessConcepts',
-               // dataLabels:{
-                //    enabled:false
-               // }
-            }, {
-                name: 'Coding',
+                name: 'BUSINESS',
                 y: 5,
-                drilldown: 'codingConcepts',
-               // dataLabels:{
-               //     enabled:false
-               // }
+                drilldown: 'businessConcepts',
+                dataLabels:{
+                    enabled:true
+                }
             }, {
-                name: 'Design',
-                y: 3,
-                drilldown: 'designConcepts'
-              //  dataLabels:{
-              //      enabled:false
-              //  }
+                name: 'CODING',
+                y: 16,
+                drilldown: 'codingConcepts',
+                dataLabels:{
+                    enabled:true
+                }
+            }, {
+                name: 'DESIGN',
+                y: 6,
+                drilldown: 'designConcepts',
+                dataLabels:{
+                    enabled:true
+                }
             }]
            
             
@@ -114,19 +126,19 @@ function drawChart(container){
             series: [{
                 id: 'businessConcepts',
                 data: [
-                    {name:'Identifying Your Value Proposition', y:1, color: 'orange'},
-                    {name:'Marketing Your Product', y: 1, color: 'gray' }
+                    {name:'BUSINESS CONCEPT 1: Identifying Your Value Proposition', y:3, color: 'orange'},
+                    {name:'BUSINESS CONCEPT 2: Marketing Your Product', y: 2, color: 'gray' }
                     
                 ]
             }, {
                 id: 'codingConcepts',
                 data: [
                     
-                    {name:'Modern Mock-Up Tools', y:1, color: 'grey'},
-                    {name:'Launching a live site', y:1, color: 'orange'},
-                    {name:'Working with web visuals', y:1, color: 'blue'},
-                    {name:'Implementing a user accounts system', y:1, color: 'green'},
-                    {name:'Storing, retrieving, and displaying database data', y:1, color: 'purple'},
+                    {name:'CODING CONCEPT 1: Leveraging Modern Mock-Up Tools', y:1, color: 'grey'},
+                    {name:'CODING CONCEPT 2: Launching a live site', y:3, color: 'orange'},
+                    {name:'CODING CONCEPT 3: Working with web visuals', y:1, color: 'blue'},
+                    {name:'CODING CONCEPT 4: Implementing a user accounts system', y:4, color: 'green'},
+                    {name:'CODING CONCEPT 5: Storing, retrieving, and displaying database data', y:7, color: 'purple'},
 
                 ]
                 
@@ -134,8 +146,8 @@ function drawChart(container){
                 id: 'designConcepts',
                 data: [
                     {name:'Basic Mock-Up Principles', y:1, color: 'orange'},
-                    {name:'Managing user experiences', y:1, color: 'blue'},
-                    {name:'Beautifying with bootstrap', y:1, color: 'green'},
+                    {name:'Managing user experiences', y:3, color: 'blue'},
+                    {name:'Beautifying with bootstrap', y:2, color: 'green'},
 
                 ]
             }]
@@ -146,10 +158,21 @@ function drawChart(container){
 // This is run on page load
 //
 $(function () {
-  //  Highcharts.setOptions({
-  //   colors: ['#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#FFF263',  '#6AF9C4']
-  //  });
+    
+    // Main colors for three topics: Business, Coding, Design
+    //
+    Highcharts.setOptions({
+     colors: ['#50B432', '#ED561B', '#DDDF00']
+    });
   
+    businessColors = [];
+    
+    codingColors = [];
+    
+    designColors = [];
+    
+    
+    
     tinkeringWithTwitterConcepts = {};
     
     tinkeringWithTwitterConcepts.business = [];
