@@ -3,6 +3,82 @@
  * http://jsfiddle.net/zaheerahmed/7xEhW/
  * http://jsfiddle.net/KNFJE/36/
  */
+
+
+/*
+ * To add new course concept graphs, you only need to modify this function
+ */
+function getCourseConcepts(courseTitle) {
+
+    /* Default variables */
+    
+    // Flat Colors Source: http://www.flatuicolorpicker.com/
+
+    var businessColors = ['#4183D7', '#59ABE3 ', '#81CFE0 ', '#52B3D9', '#22A7F0', '#3A539B'];
+    var codingColors = ['#9A12B3', '#BF55EC', '#BE90D4', '#8E44AD', '#9B59B6', '#663399'];    
+    var designColors = ['#D24D57', '#F22613', '#D91E18', '#96281B', '#EF4836', '#D64541', '#C0392B'];
+
+    var conceptsObject = {};
+   
+    
+    /* Basic pattern for adding course concepts: */
+    
+    switch(courseTitle) {
+        case "Tinkering with Twitter":
+            var tinkeringWithTwitterConcepts = {};
+
+            tinkeringWithTwitterConcepts.business = [
+                {name:'Business Unit 1: Identifying Your Value Proposition', y:3, color: businessColors[0]},
+                {name:'Business Unit 2: Marketing Your Product', y: 2, color: businessColors[1] }
+            ];
+            tinkeringWithTwitterConcepts.business_total = 5
+
+            tinkeringWithTwitterConcepts.coding = [              
+                {name:'Coding Unit 1: Leveraging Modern Mock-Up Tools', y:1, color: codingColors[0]},
+                {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
+                {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
+                {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
+                {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]},
+            ];
+            tinkeringWithTwitterConcepts.coding_total = 16
+
+            tinkeringWithTwitterConcepts.design = [
+                {name:'Design Unit 1: Basic Mock-Up Principles', y:1, color: designColors[0]},
+                {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
+                {name:'Design Unit 3: Beautifying with bootstrap', y:2, color: designColors[2]},
+            ];
+            tinkeringWithTwitterConcepts.design_total = 6
+
+            conceptsObject = tinkeringWithTwitterConcepts;
+            break;
+        case "Rapid Prototyping Fundamentals" :
+            conceptsObject = {};
+            break;
+        case "Rapid Prototyping for Developers" :
+            conceptsObject = {};
+            break;
+        case "Rapid Prototyping for MBAs" :
+            conceptsObject = {};
+            break;
+        case "Rapid Prototyping for Intrapreneurs" :
+            conceptsObject = {};
+            break;
+        case "Global Dreamers Institute" :
+            conceptsObject = {};
+            break;
+        default:
+            description = "course title not found";
+    }
+    
+    return conceptsObject;
+
+}
+
+/*
+ * The following functions are helper functions (i.e., no need to modify)
+ * 
+ */
+
 function destroyChart(){
     $('#concepts_taught_twt_container').highcharts().destroy();
 }
@@ -16,9 +92,6 @@ function drawChart(title){
         width: '150px'
     };
     
-    //DEBUG
-    //
-    console.log("Debug 1");
     
      var $conceptReporting = $('#conceptReporting');
      var conceptsObject = getCourseConcepts(title);
@@ -97,21 +170,21 @@ function drawChart(title){
             colorByPoint: true,
             data: [{
                 name: 'Business',
-                y: 5,
+                y: conceptsObject.business_total,
                 drilldown: 'businessConcepts',
                 dataLabels:{
                     enabled:true
                 }
             }, {
                 name: 'Coding',
-                y: 16,
+                y: conceptsObject.coding_total,
                 drilldown: 'codingConcepts',
                 dataLabels:{
                     enabled:true
                 }
             }, {
                 name: 'Design',
-                y: 6,
+                y: conceptsObject.design_total,
                 drilldown: 'designConcepts',
                 dataLabels:{
                     enabled:true
@@ -136,76 +209,6 @@ function drawChart(title){
         }
     });
 }
-
-
-
-
-
-function getCourseConcepts(courseTitle) {
-   
-    var conceptsObject = {};
-   
-            
-    // Flat Colors Source: http://www.flatuicolorpicker.com/
-
-    var businessColors = ['#4183D7', '#59ABE3 ', '#81CFE0 ', '#52B3D9', '#22A7F0', '#3A539B'];
-    var codingColors = ['#9A12B3', '#BF55EC', '#BE90D4', '#8E44AD', '#9B59B6', '#663399'];    
-    var designColors = ['#D24D57', '#F22613', '#D91E18', '#96281B', '#EF4836', '#D64541', '#C0392B'];
-
-    
-    switch(courseTitle) {
-        case "Tinkering with Twitter":
-            tinkeringWithTwitterConcepts = {};
-
-            tinkeringWithTwitterConcepts.business = [
-                {name:'Business Unit 1: Identifying Your Value Proposition', y:3, color: businessColors[0]},
-                {name:'Business Unit 2: Marketing Your Product', y: 2, color: businessColors[1] }
-            ];
-
-            tinkeringWithTwitterConcepts.coding = [              
-                {name:'Coding Unit 1: Leveraging Modern Mock-Up Tools', y:1, color: codingColors[0]},
-                {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
-                {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
-                {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
-                {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]},
-            ];
-
-
-            tinkeringWithTwitterConcepts.design = [
-                {name:'Design Unit 1: Basic Mock-Up Principles', y:1, color: designColors[0]},
-                {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
-                {name:'Design Unit 3: Beautifying with bootstrap', y:2, color: designColors[2]},
-            ];
-
-            conceptsObject = tinkeringWithTwitterConcepts;
-            break;
-        case "Rapid Prototyping Fundamentals" :
-            conceptsObject = {};
-            break;
-        case "Rapid Prototyping for Developers" :
-            conceptsObject = {};
-            break;
-        case "Rapid Prototyping for MBAs" :
-            conceptsObject = {};
-            break;
-        case "Rapid Prototyping for Intrapreneurs" :
-            conceptsObject = {};
-            break;
-        case "Global Dreamers Institute" :
-            conceptsObject = {};
-            break;
-        default:
-            description = "course title not found";
-    }
-    
- // DEBUG   
- //   console.log(courseTitle);
- //   console.log("Tinkering with Twitter");
- 
-    return conceptsObject;
-
-}
-
 
 
 
