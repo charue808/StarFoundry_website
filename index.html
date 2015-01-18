@@ -803,70 +803,24 @@ hr.style-one {
 <!-- COURSES MODAL START -->
      
             <!-- COURSE modal START -->
-                <div class="modal fade" id="courseInfoModal" tabindex="-1" role="dialog" aria-labelledby="courseInfoModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" style="width:85%; ">
-                    <div class="modal-content">
+                <div class="modal fade" 
+                     id="courseInfoModal" tabindex="-1" 
+                     role="dialog" aria-labelledby="courseInfoModalLabel" 
+                     aria-hidden="true">
+                    
+                  <div class="modal-dialog" style="width:85%;">
+                    <div class="modal-content" style="min-height:750px;">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <h2 class="modal-title" id="courseInfoModalLabel" style="font-size:2.5em; color:#59acd9">New Title</h2>
+                          <h2 class="modal-title" id="courseInfoModalLabel" style="font-size:2.5em; color:#59acd9; padding-left:50px;">New Title</h2>
                       </div>
                       <div class="modal-body text-center" style="color:black; font-family:Helvetica;">
                           
                           <span style="padding-left:45px; padding-right:25px; font-size:1.38em;  display:block; text-align:left;">
                               
-                              
-                              <style>
-                                  
-                                  /*
-                                   * Experiment with moving rows around, changing colors
-                                   */
-                                  
-                                  .courseDescription {
-                                      min-width:790px; /* Should be [ number of non header cells in widest row] x [width] + [ headerCell width ] */
-                                      max-width:790px;
-                                      width:790px;
-                                      
-                                      
-                                      min-height:450px /* Should stay the same */
-                                      max-height:450px;
-                                      height:450px;
-                                      
-                                      vertical-align:middle;
-
-
-                                  }
-
-                                  .courseDescription td {
-
-                                      min-width:152px; 
-                                      max-width:152px;
-                                      width:152px;
-
-
-                                      height: 152px;                                      
-                                      min-height:152px;
-                                      
-                                      
-
-                                  }
-                                  
-
-
-                                  .courseDescription td.headerCell {
-                                      max-width:30px;
-                                      min-width:30px;
-                                      width:30px;
-                                      line-height:100%;
-                                      text-align:center;
-                                      vertical-align:middle;
-                                  }
-
-                                  
-                                             
-                              </style>
-                              
+                                                   
                               <div class="row">
-                              <div class="col-lg-6">
+                              <div id="courseDescription" class="col-lg-6" style="text-align:justify;">
                               
                               <p>Dive right into the real world of building world-changing products, by developing
                               the version of the popular web tool, Twitter, from the ground up. 
@@ -970,7 +924,7 @@ hr.style-one {
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <button data-toggle="modal" data-target="#courseInfoModal" data-name="Tinkering with Twitter"
+                                                <button data-toggle="modal" data-target="#courseInfoModal" data-name="Tinkering with Twitter" 
                                                         class="pure-button" style="white-space: normal;
                                                                                    width: 100%;
                                                                                    color: white;
@@ -1435,6 +1389,9 @@ hr.style-one {
     <script src="http://code.highcharts.com/highcharts.js"></script>
     <script src="http://code.highcharts.com/modules/drilldown.js"></script>
     <script src="js/concepts_taught.js"></script>
+    
+    <script src="js/course_descriptions.js"></script>
+
 
     <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
     <script src="http://cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
@@ -1452,27 +1409,41 @@ hr.style-one {
             $('#_form_1015')[0].reset();
             
            
-            
+           // Make life easier for the company course user
+           // by pre-selecting the appropriate dropdown in the
+           // company contact us modal
+           //
            $('#companyContactModal').on('show.bs.modal', function(event) {
-              var button = $(event.relatedTarget)
-              var selection = button.data('course')
-              
-              var modal = $(this)
-              modal.find('.modal-body select').val(selection)
+              var button = $(event.relatedTarget);
+              var selection = button.data('course');
+
+              var modal = $(this);
+              modal.find('.modal-body select').val(selection);
            });
             
-            //Varying Modal content based on trigger button
             
+            // Varying course info modal content based on trigger button
+            //
             $('#courseInfoModal').on('show.bs.modal', function (event) {
-              var button = $(event.relatedTarget) // Button that triggered the modal
-              var title = button.data('name')     // Extract info from data-* attributes
-                                                  // If necessary, you could initiate an 
-                                                  // AJAX request here (and then do the updating in a callback).
-                                                  // Update the modal's content. We'll use jQuery here, 
-                                                  // but you could use a data binding library or other methods instead.
-                  var modal = $(this)
-                  modal.find('.modal-title').text(title)
-              });
+                var button = $(event.relatedTarget); // Button that triggered the modal
+
+                // Extract info from data-* attributes
+                // If necessary, you could initiate an 
+                // AJAX request here (and then do the updating in a callback).
+                // 
+                var title = button.data('name'); 
+                
+                var description = getCourseDescription(title);
+                
+
+                // Update the modal's content. We'll use jQuery here, 
+                // but you could use a data binding library or other methods instead.
+                //
+                var modal = $(this);
+                modal.find('.modal-title').text(title);
+                
+                modal.find('#courseDescription').html(description);
+            });
 
             
              $('#communityCourses').dataTable(
