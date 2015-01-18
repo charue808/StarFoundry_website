@@ -1186,7 +1186,7 @@ hr.style-one {
                                             <td> Hewlett Packard, Intel Corporation </td>
                                             <td> 3-day workshop <br> 3 hrs / day </td>
                                             <td>    
-                                                <button data-toggle="modal" data-target="#companyContactModal" class="pure-button" 
+                                                <button data-toggle="modal" data-target="#companyContactModal" data-course="Rapid Prototyping for Developers" class="pure-button"
                                                         style="
                                                                width: 100%;
                                                                color: white;
@@ -1218,7 +1218,7 @@ hr.style-one {
                                             <td> 3-day workshop <br> 3 hrs / day </td>
 
                                             <td>    
-                                                <button data-toggle="modal" data-target="#companyContactModal" 
+                                                <button data-toggle="modal" data-target="#companyContactModal" data-course="Rapid Prototyping for MBAs"
                                                         class="pure-button" style="
                                                                                    width: 100%;
                                                                                    color: white;
@@ -1249,7 +1249,7 @@ hr.style-one {
                                             <td> YMCA, Weingart Center for the Homeless, 360 Solutions, Piggybackr </td>
                                             <td> 18-day workshop <br> 2 hrs / day </td>
                                             <td>    
-                                                <button data-toggle="modal" data-target="#companyContactModal" 
+                                                <button data-toggle="modal" data-target="#companyContactModal" data-course="Rapid Prototyping for Intrapreneurs"
                                                         class="pure-button" style="
                                                                                    width: 100%;
                                                                                    color: white;
@@ -1396,7 +1396,7 @@ hr.style-one {
                                             <a href="#" rel="tooltip" title="Follow us on Instagram" class="instagram"><i class="fa fa-instagram"></i></a>
                                             <a href="#" rel="tooltip" title="View our YouTube Channel" class="hidden-xs youtube"><i class="fa fa-youtube"></i></a>
                                             <a href="#" rel="tooltip" title="Fork on GitHub" class="hidden-xs rss"><i class="fa fa-github"></i></a>
-                                            <button type="button" rel="tooltip" title="Contact Us" class="btn btn-primary" data-toggle="modal" data-target="#contactUsModal">
+                                            <button type="button" rel="tooltip" title="Contact Us" id="contactUs" class="btn btn-primary" data-toggle="modal" data-target="#contactUsModal">
                                                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                                             </button>
                                         </div>
@@ -1450,6 +1450,16 @@ hr.style-one {
 			$("[rel=tooltip]").tooltip({ placement: 'top'});
             $('.form')[0].reset();
             $('#_form_1015')[0].reset();
+            
+           
+            
+           $('#companyContactModal').on('show.bs.modal', function(event) {
+              var button = $(event.relatedTarget)
+              var selection = button.data('course')
+              
+              var modal = $(this)
+              modal.find('.modal-body select').val(selection)
+           });
             
             //Varying Modal content based on trigger button
             
