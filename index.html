@@ -628,7 +628,7 @@ hr.style-one {
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h2 class="modal-title" id="companyContactModalLabel" style="font-size:2.5em; color:#59acd9">Reserve a Class</h2>
+                          <h2 class="modal-title" id="companyContactModalLabel" style="font-size:2.5em; font-size:2.5em; color:#59acd9; padding-left: 50px;">Reserve a Class</h2>
                       </div>
                       <div class="modal-body text-center" style="color: black; font-family:Helevectia">
                         <span style="padding-left:45px; padding-right:25px; display:block; text-align:left">
@@ -865,15 +865,12 @@ hr.style-one {
                                              
                               </style>
                               
-                              <h3 class="dialogSubheader">Requirements</h3>
-                              <p>
-                                  No Experience Required - All levels are welcome!
-                              </p>
-
-                              <h3 class="dialogSubheader">Description</h3>
-
-                              <p>In this course, students dive right into the real world of building world-changing products, by developing
-                              the version of the popular web tool, Twitter from the ground up.</p>
+                              <div class="row">
+                              <div class="col-lg-6">
+                              
+                              <p>Dive right into the real world of building world-changing products, by developing
+                              the version of the popular web tool, Twitter, from the ground up. 
+                                  </p>
                               
                               <p>This version of Twitter was so successful, it is now one of the top 10 most used sites in the world.</p>
                               
@@ -881,52 +878,51 @@ hr.style-one {
                               with how to launch quickly, efficiently, and effectively. We will explore topics such as web tools, visual design,
                               managing data in the cloud, creating user engagement and interactivity through animations and javascript, customizing
                               user experiences, and keeping your application data safe.</p>
-                              
+                                  
+                                  <strong> Experience Coding is Not Required </strong> - All levels are welcome!
+<!--                              
                               <p>This course is not concerned with the fundamentals of computer science and having a career as a developer for a medium
                                to large company. Instead, the focus is on giving students the tools to launch web products of their own, as well as sparking
                                curiosity on what they can do with current technology. This is a play-based course, designed to hone "tinkering" and exploration 
                               habits, by giving students practice building useful tools that they can show off to friends and family.</p>
+-->
+                              
+                              </div>
+                         
+                              
+                              <div class = "col-lg-6">
+                               
+                                  <h4 style="font-size:28px; text-align:center; color: #F2AE72">    Concepts Taught </h4>
+                                  
+                                  
+                                  <div  id="conceptReporting" style="height:50px; text-align:center; 
+                                                                     right: 20px; font: 18px Arial, Verdana; 
+                                                                     color: #59acd9 ; min-height:35px; 
+                                                                     height:35px;  width:100%;
+                                                                     ">
+<!--
+(Select a Slice for Concept Details)
+-->
+                                  </div>
+                                     
+                                  <div class="row" id="concepts_taught_twt_container" style="margin: 80"></div>
 
-                              <h3 class="dialogSubheader">Concepts Taught</h3>
+                              </div>
                               
-                                  <table class="table table-bordered courseDescription" style="table-layout:fixed;  padding-bottom:0px;">
-                                      
-                                      <!-- On rows -->
-                                      <tr style="background-color:#F2AE72">
-                                          <td class="headerCell"><h5 style="margin:0px; color:white;">B U S I N E S S</h5>
-                                          </td>
-                                          <td>Core Business Concepts</td>
-                                          <td>Recruiting users</td>
-                                      </tr>
-                                      <tr style="background-color:#7ee564">
-                                          <td class="headerCell"><h5 style="margin:0px; color:white;">C O D I N G</h5>
-                                          </td>
-                                          <td>Modern Mock-Up Tools</td>
-                                          <td>Launching a live site</td>
-                                          <td>Working with web visuals</td>
-                                          <td>Implementing a user accounts system</td>
-                                          <td>Storing, retrieving, and displaying database data</td>
-                                      </tr>
-                                      <tr style="background-color:rgb(66, 184, 221)">
-                                          <td class="headerCell"><h5 style="margin:0px; color:white;">D E S I G N</h5>
-                                          </td>                                  
-                                          <td>Basic Mock-Up Principles</td>
-                                          <td>Managing user experiences</td>
-                                          <td>Beautifying with bootstrap</td>
-                                      </tr>
-                                  </table>
+
                               
+                          </div>
                              
                           </span>
-                          <br/>
-                          <br/>
-                          
-                          
-                          <span style="padding-left:45px; padding-right:25px; font-size:1.1em; display:block; text-align:right">
-                          * Course description subject to change
-                          <br/><br/></span>
-                          
                          
+<!--
+<br/>
+<br/>
+<span style="padding-left:45px; padding-right:25px; font-size:1.1em; display:block; text-align:right">
+* Course description subject to change
+<br/><br/></span>
+-->
+
                           
                                                          
                       </div>
@@ -1430,16 +1426,20 @@ hr.style-one {
     
     
 <!-- Core JavaScript Files -->
- 
-    
+
+
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>    
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
- <script src="http://cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="js/concepts_taught.js"></script>
 
-    
+    <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script src="http://cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+
     <!-- Custom Theme JavaScript - Scroll -->
     <script src="js/portfolio.js"></script>
 
