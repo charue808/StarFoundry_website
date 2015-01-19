@@ -52,7 +52,43 @@ function getCourseConcepts(courseTitle) {
             conceptsObject = tinkeringWithTwitterConcepts;
             break;
         case "Turn Ideas into Real Apps Fast" :
-            conceptsObject = {};
+            var turnideasintorealAppsFastConcepts = {};
+            
+            turnideasintorealAppsFastConcepts.business = [
+                {name: 'Business Unit 1: Buying and Setting Up Your Custom Domain', y:1, color: businessColors[0]},
+                {name: 'Business Unit 2: Setting Up User Analysis Tools', y:1, color: businessColors[1]},
+                {name: 'Business Unit 3: Optimizing Your Application for Search Engines', y:1, color: businessColors[2]},
+                {name: 'Business Unit 4: Accepting Credit Card Payments', y:1, color: businessColors[3]},
+                {name: 'Business Unit 5: Running Social Media Marketing Campaigns', y:1, color: businessColors[4]},
+                {name: 'Business Unit 6: Best of breed Workflow + CRM Tools', y:1, color: businessColors[5]},
+                {name: 'Business Unit 7: Discovering the Right Marketing Message with A/B Testing', y:1, color: businessColors[6]},
+            ];
+            turnideasintorealAppsFastConcepts.business_total = 7
+            
+            turnideasintorealAppsFastConcepts.coding = [
+                {name: 'Coding Unit 1: Setting Up your Development Environment', y:1, color: codingColors[0]},
+                {name: 'Coding Unit 2: Creating Project Save Points to Avoid Lost Work', y:1, color: codingColors[1]},
+                {name: 'Coding Unit 3: Just the HTML, CSS, & Javascript you need to know', y:1, color: codingColors[2]},
+                {name: 'Coding Unit 4: Collecting, Storing, and Retrieving Data on the Web', y:1, color: codingColors[3]},
+                {name: 'Coding Unit 5: Tailoring Web Experiences to Your Customers', y:1, color: codingColors[4]},
+                {name: 'Coding Unit 6: Presenting Customized Information', y:1, color: codingColors[5]},
+                {name: 'Coding Unit 7: Speeding Up Your Web Applicatio\'n Performance', y:1, color: codingColors[6]},
+                {name: 'Coding Unit 8: Changing Your Customer\'s Data', y:1, color: codingColors[7]},
+                {name: 'Coding Unit 9: Troubleshooting Issues', y:1, color: codingColors[8]},
+                {name: 'Coding Unit 10: Creating Site Notificiations', y:1, color: codingColors[9]},
+            ];
+            turnideasintorealAppsFastConcepts.coding_total = 10
+            
+            turnideasintorealAppsFastConcepts.design = [
+                {name: 'Design Unit 1: Launching a Professional Company Landing Page', y:1, color: designColors[0]},
+                {name: 'Design Unit 2: Customizing the Design of Your Landing Page', y:1, color: designColors[1]},
+                {name: 'Design Unit 3: Essential Visual Design Principles', y:1, color: designColors[2]},
+                {name: 'Design Unit 4: Essential Customer Experience Principles', y:1, color: designColors[3]},
+                {name: 'Design Unit 5: Enhance the Feel of Your Site with Transitions and Animations', y:1, color: designColors[4]},
+            ];
+            turnideasintorealAppsFastConcepts.design_total = 5
+            
+            conceptsObject = turnideasintorealAppsFastConcepts;
             break;
         case "Rapid Prototyping for Developers" :
             conceptsObject = {};
