@@ -33,7 +33,7 @@ function getCourseDescription(courseTitle) {
                               and <b>presents</b> those findings to clients looking for a place to stay).</p>  \
                               <p>We'll even show you how to quickly solve the design challenges inherent to any launch, \
                               while also giving you the key business tools to reach and keep your customers. </p> \
-                              <p><b>Minimal requirements: We ask that all students first attend our free <a href="">Tinkering with Twitter</a> \
+                              <p><b>Minimal requirements:</b> We ask that all students first attend our <b>free</b> Tinkering with Twitter \
                               course, and bring a wireless internet-enabled device with a keyboard.</p>";
             break;
         case "Rapid Prototyping for Developers" :

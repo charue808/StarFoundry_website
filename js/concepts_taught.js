@@ -51,7 +51,7 @@ function getCourseConcepts(courseTitle) {
 
             conceptsObject = tinkeringWithTwitterConcepts;
             break;
-        case "Rapid Prototyping Fundamentals" :
+        case "Turn Ideas into Real Apps Fast" :
             conceptsObject = {};
             break;
         case "Rapid Prototyping for Developers" :
