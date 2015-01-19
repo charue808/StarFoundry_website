@@ -12,9 +12,9 @@ function getCourseDescription(courseTitle) {
     switch(courseTitle) {
         case "Tinkering with Twitter":
             description =   " <p>Dive right into the real world of building world-changing products, by \
-                            developing the version of the popular web tool, Twitter, from the ground up. \
+                            developing a version of the popular web tool, Twitter, from the ground up. \
                             </p>\
-                            <p>This version of Twitter was so successful, it is now one of the top 10 most used sites in the world.</p> \
+                            <p>This version of Twitter was so successful, it evolved into one of the top 10 most used sites in the world.</p> \
                             <p>This hands-on workshop will give students familiarity with \"rapid prototyping\" concepts, which are most concerned \
                             with how to launch quickly, efficiently, and effectively. We will explore topics such as web tools, visual design, \
                             managing data in the cloud, creating user engagement and interactivity through animations and javascript, customizing \
