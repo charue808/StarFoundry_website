@@ -24,7 +24,7 @@ function getCourseDescription(courseTitle) {
         case "Turn Ideas into Real Apps Fast":
             description =   " <p>In just 12 weeks, you'll learn how to turn a dream into your very own web \
                               product. You'll gain the skills to build an early version of the world changing web \
-                              application, Facebook, from scratch. This version was successful it grew \
+                              application, Facebook, from scratch. This version was so successful it grew \
                               into the 2nd most visited site on earth today. </p> \
                               <p>Along the way we'll build the skills to launch the three major pieces of just about \
                               every web solution we use: <b>collecting</b>, <b>processing</b>, and <b>presenting data</b> \
