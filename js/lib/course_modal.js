@@ -44,7 +44,6 @@ $(document).ready(function() {
                 var button = $(event.relatedTarget); // Button that triggered the modal
                 var title = '';
                 var hash = window.location.hash;
-                    console.log('hash value is' + ' ' + hash);
                     if (isTitle (hash) && !referComplete) {
                         title = convertHashToTitle(hash);
                     } else {
@@ -76,7 +75,6 @@ $(document).ready(function() {
                 var button = $(event.relatedTarget); // Button that triggered the modal
                 var title = '';
                 var hash = window.location.hash;
-                    console.log('hash value is' + ' ' + hash);
                     if (isTitle (hash) && !referComplete) {
                         title = convertHashToTitle(hash);
                         referComplete = true;
