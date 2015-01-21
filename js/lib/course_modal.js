@@ -5,19 +5,56 @@
 * Time: 09:16 AM
 * To change this template use Tools | Templates.
 */
+function isTitle(titleHash) {
+    var titleFound = false;
+    if(titleHash) {
+        switch(titleHash.substring(1)) {
+            case "TinkeringWithTwitter":
+                titleFound = true;
+                break;
+            case "TurnIdeasIntoRealAppsFast":
+                titleFound = true;
+                break;
+            default:
+                titleFound = false;
+        } 
+    }
+    return titleFound;  
+}
 
+function convertHashToTitle(titleHash) {
+    switch(titleHash.substring(1)) {
+            case "TinkeringWithTwitter":
+                title = 'Tinkering with Twitter';
+                break;
+            case "TurnIdeasIntoRealAppsFast":
+                title = 'Turn Ideas into Real Apps Fast' ;
+                break;
+            default:
+                title = '';
+    }
+    return title;
+}
 $(document).ready(function() {
-    
+            //  Global variable keeps track of if we saw the Hash Modal
+            referComplete = false; 
             // Varying course info modal content based on trigger button
             //
             $('#courseInfoModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget); // Button that triggered the modal
-
-                // Extract info from data-* attributes
-                // If necessary, you could initiate an 
-                // AJAX request here (and then do the updating in a callback).
-                // 
-                var title = button.data('name'); 
+                var title = '';
+                var hash = window.location.hash;
+                    console.log('hash value is' + ' ' + hash);
+                    if (isTitle (hash) && !referComplete) {
+                        title = convertHashToTitle(hash);
+                    } else {
+                        // Extract info from data-* attributes
+                        // If necessary, you could initiate an 
+                        // AJAX request here (and then do the updating in a callback).
+                        // 
+                        title = button.data('name'); 
+                    }
+                
                 
                 var description = getCourseDescription(title);
                 
@@ -37,17 +74,32 @@ $(document).ready(function() {
             // 
             $('#courseInfoModal').on('shown.bs.modal', function (event) {
                 var button = $(event.relatedTarget); // Button that triggered the modal
-
-                // Extract info from data-* attributes
-                // If necessary, you could initiate an 
-                // AJAX request here (and then do the updating in a callback).
-                // 
-                var title = button.data('name'); 
-
+                var title = '';
+                var hash = window.location.hash;
+                    console.log('hash value is' + ' ' + hash);
+                    if (isTitle (hash) && !referComplete) {
+                        title = convertHashToTitle(hash);
+                        referComplete = true;
+                    } else {
+                        // Extract info from data-* attributes
+                        // If necessary, you could initiate an 
+                        // AJAX request here (and then do the updating in a callback).
+                        // 
+                        title = button.data('name'); 
+                    }
+              
+                
                 drawChart(title);
             });
 
             $('#courseInfoModal').on('hidden.bs.modal', function (e) {
                 destroyChart();
             });
+      
+    if  (isTitle(window.location.hash) ) {
+        $('#courseInfoModal').modal('show');
+        
+    }
+    
+    
 });
