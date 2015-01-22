@@ -51,10 +51,10 @@ function getCourseConcepts(courseTitle) {
 
             conceptsObject = tinkeringWithTwitterConcepts;
             break;
-        case "Turn Ideas into Real Apps Fast" :
-            var turnideasintorealAppsFastConcepts = {};
+        case "Turn Ideas into Apps Fast" :
+            var turnideasintoAppsFastConcepts = {};
             
-            turnideasintorealAppsFastConcepts.business = [
+            turnideasintoAppsFastConcepts.business = [
                 {name: 'Business Unit 1: Buying and Setting Up Your Custom Domain', y:1, color: businessColors[0]},
                 {name: 'Business Unit 2: Setting Up User Analysis Tools', y:1, color: businessColors[1]},
                 {name: 'Business Unit 3: Optimizing Your Application for Search Engines', y:2, color: businessColors[2]},
@@ -63,9 +63,9 @@ function getCourseConcepts(courseTitle) {
                 {name: 'Business Unit 6: Best of breed Workflow + CRM Tools', y:5, color: businessColors[5]},
                 {name: 'Business Unit 7: Discovering the Right Marketing Message with A/B Testing', y:6, color: businessColors[6]},
             ];
-            turnideasintorealAppsFastConcepts.business_total = 22
+            turnideasintoAppsFastConcepts.business_total = 22
             
-            turnideasintorealAppsFastConcepts.coding = [
+            turnideasintoAppsFastConcepts.coding = [
                 {name: 'Coding Unit 1: Setting Up your Development Environment', y:1, color: codingColors[0]},
                 {name: 'Coding Unit 2: Creating Project Save Points to Avoid Lost Work', y:3, color: codingColors[1]},
                 {name: 'Coding Unit 3: Just the HTML, CSS, & Javascript you need to know', y:5, color: codingColors[2]},
@@ -77,18 +77,18 @@ function getCourseConcepts(courseTitle) {
                 {name: 'Coding Unit 9: Troubleshooting Issues', y:4, color: codingColors[8]},
                 {name: 'Coding Unit 10: Creating Site Notificiations', y:4, color: codingColors[9]},
             ];
-            turnideasintorealAppsFastConcepts.coding_total = 34
+            turnideasintoAppsFastConcepts.coding_total = 34
             
-            turnideasintorealAppsFastConcepts.design = [
+            turnideasintoAppsFastConcepts.design = [
                 {name: 'Design Unit 1: Launching a Professional Company Landing Page', y:3, color: designColors[0]},
                 {name: 'Design Unit 2: Customizing the Design of Your Landing Page', y:2, color: designColors[1]},
                 {name: 'Design Unit 3: Essential Visual Design Principles', y:4, color: designColors[2]},
                 {name: 'Design Unit 4: Essential Customer Experience Principles', y:3, color: designColors[3]},
                 {name: 'Design Unit 5: Enhance the Feel of Your Site with Transitions and Animations', y:4, color: designColors[4]},
             ];
-            turnideasintorealAppsFastConcepts.design_total = 16
+            turnideasintoAppsFastConcepts.design_total = 16
             
-            conceptsObject = turnideasintorealAppsFastConcepts;
+            conceptsObject = turnideasintoAppsFastConcepts;
             break;
         case "Rapid Prototyping for Developers" :
             conceptsObject = {};

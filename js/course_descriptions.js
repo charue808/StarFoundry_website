@@ -21,7 +21,7 @@ function getCourseDescription(courseTitle) {
                             user experiences, and keeping your application data safe.</p>";
 
             break;
-        case "Turn Ideas into Real Apps Fast":
+        case "Turn Ideas into Apps Fast":
             description =   " <p>In just 12 weeks, you'll learn how to turn a dream into your very own web \
                               product. You'll gain the skills to build an early version of the world changing web \
                               application, Facebook, from scratch. This version was so successful it grew \

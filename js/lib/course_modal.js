@@ -15,7 +15,7 @@ function isTitle(titleHash) {
             case "TinkeringWithTwitter":
                 titleFound = true;
                 break;
-            case "TurnIdeasIntoRealAppsFast":
+            case "TurnIdeasintoAppsFast":
                 titleFound = true;
                 break;
             default:
@@ -32,8 +32,8 @@ function convertHashToTitle(titleHash) {
             case "TinkeringWithTwitter":
                 title = 'Tinkering with Twitter';
                 break;
-            case "TurnIdeasIntoRealAppsFast":
-                title = 'Turn Ideas into Real Apps Fast' ;
+            case "TurnIdeasintoAppsFast":
+                title = 'Turn Ideas into Apps Fast' ;
                 break;
             default:
                 title = '';

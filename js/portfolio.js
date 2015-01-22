@@ -5,6 +5,15 @@ $(window).scroll(function() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
     }
+    // Navigation Arrow slide
+    $('#aboutArrowDown').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+500) {
+            $(this).addClass("slideLeft");
+        }
+    });
 });
 
 /*
