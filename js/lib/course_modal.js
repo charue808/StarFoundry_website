@@ -5,6 +5,9 @@
 * Time: 09:16 AM
 * To change this template use Tools | Templates.
 */
+
+/*Function to find Hash and to confirm if it matches other titles */
+
 function isTitle(titleHash) {
     var titleFound = false;
     if(titleHash) {
@@ -22,6 +25,8 @@ function isTitle(titleHash) {
     return titleFound;  
 }
 
+/* Function to convert Hash that was found into the actual title of course decriptions */
+
 function convertHashToTitle(titleHash) {
     switch(titleHash.substring(1)) {
             case "TinkeringWithTwitter":
@@ -37,7 +42,7 @@ function convertHashToTitle(titleHash) {
 }
 $(document).ready(function() {
             //  Global variable keeps track of if we saw the Hash Modal
-            referComplete = false; 
+                referComplete = false;
             // Varying course info modal content based on trigger button
             //
             $('#courseInfoModal').on('show.bs.modal', function (event) {

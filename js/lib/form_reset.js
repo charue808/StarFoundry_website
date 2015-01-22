@@ -7,7 +7,11 @@
 */
 
 $(document).ready(function() {
-      $('.form')[0].reset();
-      $('#_form_1013')[0].reset();
-      $('#_form_1015')[0].reset();
+      //Reset for Company Contact Form
+        $('#_form_1029')[0].reset();
+      //Reset for Contact Us Form
+        $('#_form_1013')[0].reset();
+      //Reset for Event List Subscription Form
+        $('#_form_1015')[0].reset();
+     
 });

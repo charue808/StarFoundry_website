@@ -6,6 +6,7 @@
 * To change this template use Tools | Templates.
 */
 
+
 $(document).ready(function() {
     // Make life easier for the company course user
     // by pre-selecting the appropriate dropdown in the
@@ -19,3 +20,4 @@ $(document).ready(function() {
               modal.find('.modal-body select').val(selection);
            });
 });
+
