@@ -37,7 +37,15 @@ function getCourseDescription(courseTitle) {
                               course, and bring a wireless internet-enabled device with a keyboard.</p>";
             break;
         case "Rapid Prototyping for Developers" :
-            description =   " ....."
+            description =   " <p>In this 3-day workshop, you'll learn how to quickly launch an application prototype. \
+                               We'll give you hands on practice with modern tools that let you deploy a secure, data-driven, \
+                               performant web and near-native application in <em>hours</em> instead of weeks or month </p>\
+                               <p>Using meteor.js as our framework, we show you how to take advantage of the latest technologies \
+                               to perform such feats as creating stunning, low-lag visuals by speaking directly to the GPU, \
+                               implementing automatic reactivity so that data changes are seamlessly published without browser \
+                               refreshes, and creating a locally cached database for lightning fast user experiences, all \
+                               <em>using javascript</em>.</p> \
+                               <p><b>Requirements:</b> 1-5 years of software development experience.</p>";
             break;
         case "Rapid Prototyping for MBAs" :
             description =   "....."

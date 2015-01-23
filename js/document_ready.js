@@ -1,8 +1,8 @@
 /**
 * Created with StarFoundry_website.
 * User: charue808
-* Date: 2015-01-20
-* Time: 09:16 AM
+* Date: 2015-01-22
+* Time: 11:34 PM
 * To change this template use Tools | Templates.
 */
 
@@ -40,7 +40,19 @@ function convertHashToTitle(titleHash) {
     }
     return title;
 }
-$(document).ready(function() {
+ 
+
+$(function() {
+       //Reset for Company Contact Form
+        $('#_form_1029')[0].reset();
+      //Reset for Contact Us Form
+        $('#_form_1013')[0].reset();
+      //Reset for Event List Subscription Form
+        $('#_form_1015')[0].reset();
+    
+    
+            /* To switch information in course modals and to use links to open other course modals*/
+            
             //  Global variable keeps track of if we saw the Hash Modal
                 referComplete = false;
             // Varying course info modal content based on trigger button
@@ -105,4 +117,36 @@ $(document).ready(function() {
     }
     
     
+    /* COMPANY CONTACT MODAL*/
+    
+     // Make life easier for the company course user
+    // by pre-selecting the appropriate dropdown in the
+    // company contact us modal
+    //
+           $('#companyContactModal').on('show.bs.modal', function(event) {
+              var button = $(event.relatedTarget);
+              var selection = button.data('course');
+
+              var modal = $(this);
+              modal.find('.modal-body select').val(selection);
+           });
+    
+    /* Community Course Data tables*/
+    $('#communityCourses').dataTable(
+          {
+            // For more options, see: https://datatables.net/reference/option/
+            // To add sort arrows, see 'portfolio.css', line 670
+            "paging": false,
+            "searching":false,
+            "info": false,
+            "sorting": false
+
+           }
+      );
+    
+       
+    /* Tool-Tip placement*/
+     $("[rel=tooltip]").tooltip({ placement: 'top'});
+    
+       
 });
