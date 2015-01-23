@@ -119,7 +119,7 @@ $(function() {
     
     /* COMPANY CONTACT MODAL*/
     
-     // Make life easier for the company course user
+    // Make life easier for the company course user
     // by pre-selecting the appropriate dropdown in the
     // company contact us modal
     //

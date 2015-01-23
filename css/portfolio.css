@@ -383,6 +383,15 @@ footer {
 	font-size: 14px;	
 }
 
+@media only screen and (min-device-width : 320px) and (max-device-width: 400px) {
+    #concepts_taught_twt_container {
+        margin-top: 10px;
+        margin-left: -55px;
+        width: 300px;
+        height:500px;
+    }
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 800px) {
         
     table,
@@ -421,6 +430,7 @@ footer {
     padding:10px;
     margin: 15px;
     }
+    
     
 }
 
