@@ -129,7 +129,9 @@ $(function() {
 
               var modal = $(this);
               modal.find('.modal-body select').val(selection);
+ 
            });
+           
     
     /* Community Course Data tables*/
     $('#communityCourses').dataTable(
