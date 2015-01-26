@@ -70,8 +70,20 @@ function getCourseDescription(courseTitle) {
                                 application in <em>hours</em> instead of weeks or months.</p> \
                              <p><b>Requirements:</b>Some design experience, knowledge of basic HTML, CSS concepts.</p>";
             break;
-        case "Global Dreamers Institute" :
-            description =   "....."
+        case "Tinkering with Twitter (for Students)" :
+            description =   "<p>In this course, our students dive right into the real world of building \
+                                world-changing products, by developing a version of the popular web tools, Twitter \
+                                from the ground up. This version of Twitter was so successful, it evolved into one \
+                                of the top 10 most used sites in the world today.</p> \
+                             <p>This hands-on workshop will give participants familiarity with &ldquo;rapid prototyping&rdquo; \
+                                concepts, which focus on how to launch quickly, efficiently, and effectively. We'll \
+                                explore topics such as web tools, visual design, managing data in the cloud, \
+                                creating engagement and interactivity through animations, customizing \
+                                experiences, and keeping your data safe. </p>\
+                             <p>Students will gain tools to launch web products of their own, and will apply \
+                                their curiosity to current trends in digital literacy and authorship. This is a play-based course, \
+                                designed to hone &ldquo;tinkering&rdquo; and exploration habits, by giving students practice building \
+                                useful tools that they can show off to friends and family.</p>";
             break;
         default:
             description = "course title not found";
