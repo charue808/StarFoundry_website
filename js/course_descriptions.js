@@ -48,10 +48,27 @@ function getCourseDescription(courseTitle) {
                                <p><b>Requirements:</b> 1-5 years of software development experience.</p>";
             break;
         case "Rapid Prototyping for MBAs" :
-            description =   "....."
+            description =   "<p>In just 10 weeks, you'll learn how to turn an idea into your very own web product. \
+                                You'll gain the skills to build an early version of the world changing web \
+                                application, Facebook, from scratch. This version was so successful, it grew into \
+                                the 2nd most visited site on earth today.</p> \
+                             <p>Along the way we'll build the skills to launch the three major pieces of just about \
+                                every web solution we use: <b>collecting</b>, <b>processing</b>, and <b>presenting data</b> \
+                                (AirBnB, for example, <b>collects</b> client preference and location information, \
+                                <b>processes</b> it to figure out which locations match with which client preferences, \
+                                and <b>presents</b> those findings to clients looking for a place to stay).</p> \
+                             <p>We'll even show you how to quickly solve the design challenges inherent to any \
+                                launch, while also giving you the key business tools to reach and keep your customers.</p>";
             break;
-        case "Rapid Prototyping for Intrapreneurs" :
-            description =   "....."
+        case "Rapid Prototyping for Designers" :
+            description =   "<p>In this 2-weekend workshop, you'll learn how to quickly launch an application \
+                                prototype and test out your ideas with real (not &ldquo;mock&rdquo;) user experiences, without \
+                                requiring large IT investments. </p>\
+                             <p>Learn how to take advantage of the latest technologies to create stunning visual \
+                                stories based on live user data. We'll give you hands on practice with modern \
+                                tools that let you deploy a secure, fast-acting web and near-native mobile \
+                                application in <em>hours</em> instead of weeks or months.</p> \
+                             <p><b>Requirements:</b>Some design experience, knowledge of basic HTML, CSS concepts.</p>";
             break;
         case "Global Dreamers Institute" :
             description =   "....."

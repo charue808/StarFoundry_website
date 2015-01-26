@@ -91,13 +91,113 @@ function getCourseConcepts(courseTitle) {
             conceptsObject = turnideasintoAppsFastConcepts;
             break;
         case "Rapid Prototyping for Developers" :
-            conceptsObject = {};
+            var rapidProtoypingForDevsConcepts = {};
+            
+            rapidProtoypingForDevsConcepts.business = [
+                {name: 'Business Unit 1: Creating User Feedback Channels', y:3, color: businessColors[0]},
+                {name: 'Business Unit 2: Experimenting through A/B Testing', y:5, color: businessColors[1]},
+                {name: 'Business Unit 3: Implementing Virality', y:6, color: businessColors[2]}
+            ];
+            rapidProtoypingForDevsConcepts.business_total = 14
+            
+            rapidProtoypingForDevsConcepts.design = [
+                {name:'Design Unit 1: Rapidly Deploying a Well-Designed Landing Page to Show Off Your Product', y: 6, color: designColors[0]},
+                {name:'Design Unit 2: Rapidly Deploying an Administration Back-End Site Panel for Admin Users', y: 9, color: designColors[1]},
+                {name:'Design Unit 3: Transitions and Animations in Meteor', y:4, color: designColors[2]}
+            ];
+            rapidProtoypingForDevsConcepts.design_total = 19
+            
+            rapidProtoypingForDevsConcepts.coding = [
+                {name: 'Coding Unit 1: Meteor.js Fundamentals', y:7, color:codingColors[0]},
+                {name: 'Coding Unit 2: Authenticating Users', y:5, color: codingColors[1]},
+                {name: 'Coding Unit 3: Storing Data Reactively', y:4, color: codingColors[2]},
+                {name: 'Coding Unit 4: Collecting Data', y:3, color: codingColors[3]},
+                {name: 'Coding Unit 5: Publishing and Subscribing Reactively', y:5, color: codingColors[4]},
+                {name: 'Coding Unit 6: Notificiations', y:4, color: codingColors[5]},
+                {name: 'Coding Unit 7: Security Considerations', y:5, color:codingColors[6]},
+                {name: 'Coding Unit 8: Performance Tuning', y:6, color:codingColors[7]},
+                {name: 'Coding Unit 9: Scaling with Modulus', y:3, color:codingColors[8]},
+                {name: 'Coding Unit 10: Unit Testing', y:4, color:codingColors[9]},
+                {name: 'Coding Unit 11: Error Handling', y:6, color:codingColors[10]},
+                {name: 'Coding Unit 12: Reactive Data Visualization with D3', y:7, color:codingColors[11]},
+                {name: 'Coding Unit 13: Accessing the GPU', y:8, color:codingColors[12]},
+                {name: 'Coding Unit 14: Leveraging Node Packages', y:6, color:codingColors[13]},
+                {name: 'Coding Unit 15: Cross-Platform Deployment', y:8, color:codingColors[14]}
+            ];
+            rapidProtoypingForDevsConcepts.coding_total = 69
+            conceptsObject = rapidProtoypingForDevsConcepts;
             break;
         case "Rapid Prototyping for MBAs" :
-            conceptsObject = {};
+            var rapidPrototypingForMBAsConcepts = {};
+            
+            rapidPrototypingForMBAsConcepts.business = [
+                {name: 'Business Unit 1: Buying and Setting Up Your Custom Domain', y:2, color:businessColors[0]},
+                {name: 'Business Unit 2: Setting Up User Analysis Tools', y:3, color:businessColors[1]},
+                {name: 'Business Unit 3: Optimizing Your Application For Seach Engines', y:4, color:businessColors[2]},
+                {name: 'Business Unit 4: Accepting Credit Card Payments', y:3, color:businessColors[3]},
+                {name: 'Business Unit 5: Running Social Media Marketing Campaigns', y:5, color:businessColors[4]},
+                {name: 'Business Unit 6: Best of Breed Workflow + CRM tools', y:4, color:businessColors[5]},
+                {name: 'Business Unit 7: Discover the Right Marketing Message with A/B Testing', y:3, color:businessColors[6]}
+            ];
+            rapidPrototypingForMBAsConcepts.business_total = 24
+                
+            rapidPrototypingForMBAsConcepts.coding = [
+                {name: 'Coding Unit 1: Setting Up Your Development Environment', y:2, color:codingColors[0]},
+                {name: 'Coding Unit 2: Creating Project Save Points to Avoid Lost Work', y:4, color:codingColors[1]},
+                {name: 'Coding Unit 3: Just the HTML, CSS, Javascript You Need to Know', y:4, color:codingColors[2]},
+                {name: 'Coding Unit 4: Collecting, Storing, and Retrieving Data on the Web', y:6, color:codingColors[3]},
+                {name: 'Coding Unit 5: Tailoring Web Experiences to Your Customer', y:5, color:codingColors[4]},
+                {name: 'Coding Unit 6: Presenting Customized Information', y:4, color:codingColors[5]},
+                {name: 'Coding Unit 7: Speeding Up Your Web Applications Performance', y:3, color:codingColors[6]},
+                {name: 'Coding Unit 8: Changing Your Customer\'s Data', y:3, color:codingColors[7]},
+                {name: 'Coding Unit 9: Troubleshooting Issues', y:3, color:codingColors[8]},
+                {name: 'Coding Unit 10 Creating Notifications', y:4, color:codingColors[9]}
+            ];
+            rapidPrototypingForMBAsConcepts.coding_total = 38
+            
+            rapidPrototypingForMBAsConcepts.design = [
+                {name: 'Design Unit 1: Launching a Professional Company Landing Page', y:3, color:designColors[0]},
+                {name: 'Design Unit 2: Customizing the Design of Your Landing Page', y:4, color:designColors[1]},
+                {name: 'Design Unit 3: Essential Visual Design Principles', y:5, color:designColors[2]},
+                {name: 'Design Unit 4: Essential Customer Experience Principles', y:4, color:designColors[3]},
+                {name: 'Design Unit 5: Enhance the Feel of Your Site with Transitions and Animations', y:6, color:designColors[4]}
+            ];
+            rapidPrototypingForMBAsConcepts.design_total = 22
+            
+            conceptsObject = rapidPrototypingForMBAsConcepts;
             break;
-        case "Rapid Prototyping for Intrapreneurs" :
-            conceptsObject = {};
+        case "Rapid Prototyping for Designers" :
+            var rapidPrototypingForDesignersConcepts = {};
+            
+            rapidPrototypingForDesignersConcepts.business = [
+                {name: 'Business Unit 1: Setting Up User Analysis Tools', y:3, color:businessColors[0]},
+                {name: 'Business Unit 2: Creating User Feedback Channels', y:4, color:businessColors[1]},
+                {name: 'Business Unit 3: Finding the Design that Resonates with Users through A/B Testing', y:3, color:businessColors[2]}
+            ];
+            rapidPrototypingForDesignersConcepts.business_total = 10
+            
+            rapidPrototypingForDesignersConcepts.coding = [
+                {name: 'Coding Unit 1: Setting Up Your Code Portfolio', y:4, color:codingColors[0]},
+                {name: 'Coding Unit 2: Deploying Your Own Live Web Server in Minutes', y:4, color:codingColors[1]},
+                {name: 'Coding Unit 3: Creating Project Save Points to Avoid Lost Work', y:5, color:codingColors[2]},
+                {name: 'Coding Unit 4: Just the HTML, CSS and Javascript You Need to Know', y:6, color:codingColors[3]},
+                {name: 'Coding Unit 5: Collecting, Storing and Retrieving Data on the Web', y:3, color:codingColors[4]},
+                {name: 'Coding Unit 6: Tailoring Web Experiences to Your Customer', y:3, color:codingColors[5]},
+                {name: 'Coding Unit 7: Presenting Customized Information', y:3, color:codingColors[6]},
+                {name: 'Coding Unit 8: Changing You Customer\'s Data', y:4, color:codingColors[7]}
+            ];
+            rapidPrototypingForDesignersConcepts.coding_total = 32
+            
+            rapidPrototypingForDesignersConcepts.design = [
+                {name: 'Design Unit 1: Transitions and Animations in Meteor.js', y:4, color:designColors[0]},
+                {name: 'Design Unit 2: Launching a Professional Landing Page', y:3, color:designColors[1]},
+                {name: 'Design Unit 3: Customizing the Design of Your Landing Page', y:3, color:designColors[2]},
+                {name: 'Design Unit 4: Enhance the Feel of Your Site with Transitions and Animations', y:4, color:designColors[3]},
+                {name: 'Design Unit 5: Creating Engaging Visual Stories with d3', y:6, color:designColors[4]}
+            ];
+            rapidPrototypingForDesignersConcepts.design_total = 20
+            
+            conceptsObject = rapidPrototypingForDesignersConcepts;
             break;
         case "Global Dreamers Institute" :
             conceptsObject = {};
