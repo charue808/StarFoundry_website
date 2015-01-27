@@ -166,7 +166,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = rapidPrototypingForMBAsConcepts;
             break;
-        case "Rapid Prototyping for Designers" :
+        case "Prototyping Tools for Designers" :
             var rapidPrototypingForDesignersConcepts = {};
             
             rapidPrototypingForDesignersConcepts.business = [
@@ -199,31 +199,31 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = rapidPrototypingForDesignersConcepts;
             break;
-        case "Tinkering with Twitter (for Students)" :
-            var tinkeringWithTwitterStudentsConcepts = {};
+        case "Tinkering with Twitter (for Schools)" :
+            var tinkeringWithTwitterSchoolsConcepts = {};
             
-            tinkeringWithTwitterStudentsConcepts.business = [
+            tinkeringWithTwitterSchoolsConcepts.business = [
                 {name: 'Business Unit 1: Core Business Concepts', y:4, color:businessColors[0]},
                 {name: 'Business Unit 2: Recruiting Users', y:5, color:businessColors[1]}
             ];
-            tinkeringWithTwitterStudentsConcepts.business_total = 9
+            tinkeringWithTwitterSchoolsConcepts.business_total = 9
             
-            tinkeringWithTwitterStudentsConcepts.coding = [
+            tinkeringWithTwitterSchoolsConcepts.coding = [
                 {name: 'Coding Unit 1: Modern Mock-Up Tools', y:3, color:codingColors[0]},
                 {name: 'Coding Unit 2: Launching a Live Site', y:4, color:codingColors[1]},
                 {name: 'Coding Unit 3: Working with Web Visuals', y:4, color:codingColors[2]},
                 {name: 'Coding Unit 4: Implementing a User Accounts System', y:3, color:codingColors[3]},
                 {name: 'Coding Unit 5: Storing, Retrieving, and Displaying Database Data', y:5, color:codingColors[4]}
             ];
-            tinkeringWithTwitterStudentsConcepts.coding_total = 19
+            tinkeringWithTwitterSchoolsConcepts.coding_total = 19
             
-            tinkeringWithTwitterStudentsConcepts.design = [
+            tinkeringWithTwitterSchoolsConcepts.design = [
                 {name: 'Design Unit 1: Basic Mock-Up Principles', y:4, color:designColors[0]},
                 {name: 'Design Unit 2: Managing User Experiences', y:5, color:designColors[1]},
                 {name: 'Design Unit 3: Beautifying with Bootstrap', y:6, color:designColors[2]}
             ];
-            tinkeringWithTwitterStudentsConcepts.design_total = 15
-            conceptsObject = tinkeringWithTwitterStudentsConcepts;
+            tinkeringWithTwitterSchoolsConcepts.design_total = 15
+            conceptsObject = tinkeringWithTwitterSchoolsConcepts;
             break;
         default:
             description = "course title not found";

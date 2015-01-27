@@ -112,6 +112,10 @@ $(function() {
             });
       
     if  (isTitle(window.location.hash) ) {
+        $('html, body').stop().animate({
+            scrollTop: $('#courses').offset().top
+            
+        }, 800, 'easeInOutExpo');
         $('#courseInfoModal').modal('show');
         
     }

@@ -48,7 +48,7 @@ function getCourseDescription(courseTitle) {
                                <p><b>Requirements:</b> 1-5 years of software development experience.</p>";
             break;
         case "Rapid Prototyping for MBAs" :
-            description =   "<p>In just 10 weeks, you'll learn how to turn an idea into your very own web product. \
+            description =   "<p>In just 12 weeks, you'll learn how to turn an idea into your very own web product. \
                                 You'll gain the skills to build an early version of the world changing web \
                                 application, Facebook, from scratch. This version was so successful, it grew into \
                                 the 2nd most visited site on earth today.</p> \
@@ -60,7 +60,7 @@ function getCourseDescription(courseTitle) {
                              <p>We'll even show you how to quickly solve the design challenges inherent to any \
                                 launch, while also giving you the key business tools to reach and keep your customers.</p>";
             break;
-        case "Rapid Prototyping for Designers" :
+        case "Prototyping Tools for Designers" :
             description =   "<p>In this 2-weekend workshop, you'll learn how to quickly launch an application \
                                 prototype and test out your ideas with real (not &ldquo;mock&rdquo;) user experiences, without \
                                 requiring large IT investments. </p>\
@@ -68,9 +68,9 @@ function getCourseDescription(courseTitle) {
                                 stories based on live user data. We'll give you hands on practice with modern \
                                 tools that let you deploy a secure, fast-acting web and near-native mobile \
                                 application in <em>hours</em> instead of weeks or months.</p> \
-                             <p><b>Requirements:</b>Some design experience, knowledge of basic HTML, CSS concepts.</p>";
+                             <p><b>Requirements:</b> Some design experience, knowledge of basic HTML + CSS</p>";
             break;
-        case "Tinkering with Twitter (for Students)" :
+        case "Tinkering with Twitter (for Schools)" :
             description =   "<p>In this course, our students dive right into the real world of building \
                                 world-changing products, by developing a version of the popular web tools, Twitter \
                                 from the ground up. This version of Twitter was so successful, it evolved into one \
