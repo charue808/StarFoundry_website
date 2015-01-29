@@ -72,7 +72,7 @@ function getCourseConcepts(courseTitle) {
                 {name: 'Coding Unit 4: Collecting, Storing, and Retrieving Data on the Web', y:6, color: codingColors[3]},
                 {name: 'Coding Unit 5: Tailoring Web Experiences to Your Customers', y:3, color: codingColors[4]},
                 {name: 'Coding Unit 6: Presenting Customized Information', y:3, color: codingColors[5]},
-                {name: 'Coding Unit 7: Speeding Up Your Web Applicatio\'n Performance', y:2, color: codingColors[6]},
+                {name: 'Coding Unit 7: Speeding Up Your Web Application Performance', y:2, color: codingColors[6]},
                 {name: 'Coding Unit 8: Changing Your Customer\'s Data', y:3, color: codingColors[7]},
                 {name: 'Coding Unit 9: Troubleshooting Issues', y:4, color: codingColors[8]},
                 {name: 'Coding Unit 10: Creating Site Notificiations', y:4, color: codingColors[9]},
