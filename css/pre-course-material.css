@@ -1,0 +1,39 @@
+#mainTitle {
+    font-size: 2.5em;
+    color: #59acd9;
+}
+
+#sectionTitle {
+    font-size: 1.5em;
+    color: #59acd9;
+    text-align: justify;
+
+}
+
+
+h3 {
+    margin-left:5px;
+}
+
+p {
+    margin-left: 20px;
+    text-align: justify;
+}
+
+#surveyLink {
+    color: darkblue;
+    font-size: 22px;
+}
+
+#surveyLink:hover {
+    color: #59acd9;
+}
+
+span {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: block;
+    text-align: center;
+}
+
+
