@@ -24,7 +24,7 @@ function getCourseConcepts(courseTitle) {
     /* Basic pattern for adding course concepts: */
     
     switch(courseTitle) {
-        case "Tinkering with Twitter":
+        case "Building Your Own Apps":
             var tinkeringWithTwitterConcepts = {};
 
             tinkeringWithTwitterConcepts.business = [

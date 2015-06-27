@@ -10,7 +10,7 @@ function getCourseDescription(courseTitle) {
     var description = "";
     
     switch(courseTitle) {
-        case "Tinkering with Twitter":
+        case "Building Your Own Apps":
             description =   " <p>Dive right into the real world of building world-changing products, by \
                             developing a version of the popular web tool, Twitter, from the ground up. \
                             </p>\
