@@ -99,7 +99,8 @@ function getCourseDescription(courseTitle) {
                               <p>We'll even show you how to quickly solve the design challenges inherent to any launch, \
                               while also giving you the key business tools to reach and keep your customers. </p> \
                               <p><b>Minimal requirements:</b> We ask that all students first attend our free <a target='_blank' href='http://nelson-common.codio.io/#TinkeringWithTwitter'>Tinkering with Twitter</a> \
-                              course, and bring a wireless internet-enabled device with a keyboard.</p>";
+                              course, and bring a wireless internet-enabled device with a keyboard.</p>\
+                              <p>Sponsored by the Berkeley Student Technology Fund</p>";
             break;
         case "Rapid Prototyping for Developers" :
             description =   " <p>In this 3-day workshop, you'll learn how to quickly launch an application prototype. \
