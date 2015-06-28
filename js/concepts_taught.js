@@ -24,32 +24,74 @@ function getCourseConcepts(courseTitle) {
     /* Basic pattern for adding course concepts: */
     
     switch(courseTitle) {
-        case "Building Your Own Apps":
-            var tinkeringWithTwitterConcepts = {};
+        case "Building Your Own Apps (Session 1)":
+            var buildingYourOwnApps1Concepts = {};
 
-            tinkeringWithTwitterConcepts.business = [
+            buildingYourOwnApps1Concepts.business = [
                 {name:'Business Unit 1: Identifying your value proposition', y:3, color: businessColors[0]},
                 {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1] }
             ];
-            tinkeringWithTwitterConcepts.business_total = 5
+            buildingYourOwnApps1Concepts.business_total = 5
 
-            tinkeringWithTwitterConcepts.coding = [              
+            buildingYourOwnApps1Concepts.coding = [              
                 {name:'Coding Unit 1: Leveraging modern mock-up tools', y:1, color: codingColors[0]},
                 {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
                 {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
                 {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
                 {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]},
             ];
-            tinkeringWithTwitterConcepts.coding_total = 16
+            buildingYourOwnApps1Concepts.coding_total = 16
 
-            tinkeringWithTwitterConcepts.design = [
+            buildingYourOwnApps1Concepts.design = [
                 {name:'Design Unit 1: Basic mock-up principles', y:1, color: designColors[0]},
                 {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
                 {name:'Design Unit 3: Beautifying with Bootstrap', y:2, color: designColors[2]},
             ];
-            tinkeringWithTwitterConcepts.design_total = 6
+            buildingYourOwnApps1Concepts.design_total = 6
 
-            conceptsObject = tinkeringWithTwitterConcepts;
+            conceptsObject = buildingYourOwnApps1Concepts;
+            break;
+        case "Building Your Own Apps (Session 2)":
+            var buildingYourOwnApps2Concepts = {};
+            
+            buildingYourOwnApps2Concepts.business = [];
+            buildingYourOwnApps2Concepts.business_total = 0
+            
+            buildingYourOwnApps2Concepts.coding = [];
+            buildingYourOwnApps2Concepts.coding_total = 0
+            
+            buildingYourOwnApps2Concepts.design = [];
+            buildingYourOwnApps2Concepts.design_total = 0
+            
+            conceptsObject = buildingYourOwnApps2Concepts;
+            break;
+        case "Building Your Own Apps (Session 3)":
+            var buildingYourOwnApps3Concepts = {};
+            
+            buildingYourOwnApps3Concepts.business = [];
+            buildingYourOwnApps3Concepts.business_total = 0
+            
+            buildingYourOwnApps3Concepts.coding = [];
+            buildingYourOwnApps3Concepts.coding_total = 0
+            
+            buildingYourOwnApps3Concepts.design = [];
+            buildingYourOwnApps3Concepts.design_total = 0
+            
+            conceptsObject = buildingYourOwnApps3Concepts;
+            break;
+        case "Building Your Own Apps (Session 4)":
+            var buildingYourOwnApps4Concepts = {};
+            
+            buildingYourOwnApps4Concepts.business = [];
+            buildingYourOwnApps4Concepts.business_total = 0
+            
+            buildingYourOwnApps4Concepts.coding = [];
+            buildingYourOwnApps4Concepts.coding_total = 0
+            
+            buildingYourOwnApps4Concepts.design = [];
+            buildingYourOwnApps4Concepts.design_total = 0
+            
+            conceptsObject = buildingYourOwnApps4Concepts;
             break;
         case "Turn Ideas into Apps Fast" :
             var turnideasintoAppsFastConcepts = {};

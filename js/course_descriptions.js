@@ -10,16 +10,81 @@ function getCourseDescription(courseTitle) {
     var description = "";
     
     switch(courseTitle) {
-        case "Building Your Own Apps":
-            description =   " <p>Dive right into the real world of building world-changing products, by \
-                            developing a version of the popular web tool, Twitter, from the ground up. \
-                            </p>\
-                            <p>This version of Twitter was so successful, it evolved into one of the top 10 most used sites in the world.</p> \
-                            <p>This hands-on workshop will give students familiarity with \"rapid prototyping\" concepts, which are most concerned \
-                            with how to launch quickly, efficiently, and effectively. We will explore topics such as web tools, visual design, \
-                            managing data in the cloud, creating user engagement and interactivity through animations and javascript, customizing \
-                            user experiences, and keeping your application data safe.</p>";
+        case "Building Your Own Apps (Session 1)":
+            description =   "<h3>Overview</h3>\
+                            <p>Build Your Own Apps is a 4 session series that provides \
+                            entrepreneurs and community members a hands-on, collaborative \
+                            environment in which to explore powerful new tools for building \
+                            web and mobile applications.</p> \
+                            <p>This course is for Entrepreneurs who are new to the world of \
+                            coding, but might have an idea for a web and mobile product they \
+                            would like to build. This course is especially for changemakers who\
+                            would like: <ul><li>The knowledge to build an app from the ground up, or</li> \
+                            <li>The technical know-how to manage a freelance developer</li></ul></p>\
+                            <h3>What to expect in Session 1</h3>\
+                            <p>During our first session you'll be learning how to use HTML, CSS and javaScript\
+                            to build interactive websites and learn about the free, fast tools for modern,\
+                            professional, highly polished websites</p>\
+                            <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                            </a></button>";
 
+            break;
+        case "Building Your Own Apps (Session 2)":
+            description = "<h3>Overview</h3>\
+                          <p>Build Your Own Apps is a 4 session series that provides \
+                            entrepreneurs and community members a hands-on, collaborative \
+                            environment in which to explore powerful new tools for building \
+                            web and mobile applications.</p>\
+                           <p>This course is for Entrepreneurs who are new to the world of \
+                            coding, but might have an idea for a web and mobile product they \
+                            would like to build. This course is especially for changemakers who\
+                            would like: <ul><li>The knowledge to build an app from the ground up, or</li> \
+                            <li>The technical know-how to manage a freelance developer</li></ul></p>\
+                           <h3>What to expect in Session 2</h3>\
+                           <p>We'll be looking at getting the web to work for you, \
+                            leasing and controlling a server for free and undertanding a powerful\
+                            new tool to build \"cross-platform\" apps.</p>\
+                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           </a></button>";
+            
+            break;
+        case "Building Your Own Apps (Session 3)":
+            description = "<h3>Overview</h3>\
+                          <p>Build Your Own Apps is a 4 session series that provides \
+                            entrepreneurs and community members a hands-on, collaborative \
+                            environment in which to explore powerful new tools for building \
+                            web and mobile applications.</p>\
+                           <p>This course is for Entrepreneurs who are new to the world of \
+                            coding, but might have an idea for a web and mobile product they \
+                            would like to build. This course is especially for changemakers who\
+                            would like: <ul><li>The knowledge to build an app from the ground up, or</li> \
+                            <li>The technical know-how to manage a freelance developer</li></ul></p>\
+                           <h3>What to expect in Session 3</h3>\
+                           <p>In session 3 we'll be turning your website you build in session 1\
+                            into a web application, add logic for user interactions, revamp the \
+                            visual flow and change the structure dynamically.</p>\
+                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           </a></button>";
+            
+            break;
+        case "Building Your Own Apps (Session 4)":
+            description = "<h3>Overview</h3>\
+                          <p>Build Your Own Apps is a 4 session series that provides \
+                            entrepreneurs and community members a hands-on, collaborative \
+                            environment in which to explore powerful new tools for building \
+                            web and mobile applications.</p>\
+                           <p>This course is for Entrepreneurs who are new to the world of \
+                            coding, but might have an idea for a web and mobile product they \
+                            would like to build. This course is especially for changemakers who\
+                            would like: <ul><li>The knowledge to build an app from the ground up, or</li> \
+                            <li>The technical know-how to manage a freelance developer</li></ul></p>\
+                           <h3>What to expect in Session 4</h3>\
+                           <p>In our final session we'll be installing a user login system, \
+                            manage lasting data, secure your app and convert your app into a \
+                            mobile application</p>\
+                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           </a></button>";
+            
             break;
         case "Turn Ideas into Apps Fast":
             description =   " <p>In just 12 weeks, you'll learn how to turn a dream into your very own web \
