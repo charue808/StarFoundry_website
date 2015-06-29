@@ -10,7 +10,7 @@ function getCourseDescription(courseTitle) {
     var description = "";
     
     switch(courseTitle) {
-        case "Building Your Own Apps (Session 1)":
+        case "Building Your Own Apps: Level 1":
             description =   "<h3>Overview</h3>\
                             <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -29,7 +29,7 @@ function getCourseDescription(courseTitle) {
                             </a></button>";
 
             break;
-        case "Building Your Own Apps (Session 2)":
+        case "Building Your Own Apps: Level 2":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -48,7 +48,7 @@ function getCourseDescription(courseTitle) {
                            </a></button>";
             
             break;
-        case "Building Your Own Apps (Session 3)":
+        case "Building Your Own Apps: Level 3":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -67,7 +67,7 @@ function getCourseDescription(courseTitle) {
                            </a></button>";
             
             break;
-        case "Building Your Own Apps (Session 4)":
+        case "Building Your Own Apps: Level 4":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -100,7 +100,23 @@ function getCourseDescription(courseTitle) {
                               while also giving you the key business tools to reach and keep your customers. </p> \
                               <p><b>Minimal requirements:</b> We ask that all students first attend our free <a target='_blank' href='http://nelson-common.codio.io/#TinkeringWithTwitter'>Tinkering with Twitter</a> \
                               course, and bring a wireless internet-enabled device with a keyboard.</p>\
-                              <p>Sponsored by the Berkeley Student Technology Fund</p>";
+                              </p>";
+            break;
+             case "UC-Berkeley Volunteers Building Apps":
+            description =   " <p>In just 12 weeks, you'll learn how to turn a dream into your very own web \
+                              product. You'll gain the skills to build an early version of the world changing web \
+                              application, Facebook, from scratch. This version was so successful it grew \
+                              into the 2nd most visited site on earth today. </p> \
+                              <p>Along the way we'll build the skills to launch the three major pieces of just about \
+                              every web solution we use: <b>collecting</b>, <b>processing</b>, and <b>presenting data</b> \
+                              (AirBnB, for example, <b>collects</b> client preference and location information,\
+                              <b>processes</b> it to figure out which locations match with which clients preferences, \
+                              and <b>presents</b> those findings to clients looking for a place to stay).</p>  \
+                              <p>We'll even show you how to quickly solve the design challenges inherent to any launch, \
+                              while also giving you the key business tools to reach and keep your customers. </p> \
+                              <p><b>Minimal requirements:</b> We ask that all students first attend our free <a target='_blank' href='http://nelson-common.codio.io/#TinkeringWithTwitter'>Tinkering with Twitter</a> \
+                              course, and bring a wireless internet-enabled device with a keyboard.</p>\
+                              <h6>Sponsored by the Berkeley Student Technology Fund</h6>";
             break;
         case "Rapid Prototyping for Developers" :
             description =   " <p>In this 3-day workshop, you'll learn how to quickly launch an application prototype. \

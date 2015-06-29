@@ -24,7 +24,7 @@ function getCourseConcepts(courseTitle) {
     /* Basic pattern for adding course concepts: */
     
     switch(courseTitle) {
-        case "Building Your Own Apps (Session 1)":
+        case "Building Your Own Apps: Level 1":
             var buildingYourOwnApps1Concepts = {};
 
             buildingYourOwnApps1Concepts.business = [
@@ -51,7 +51,7 @@ function getCourseConcepts(courseTitle) {
 
             conceptsObject = buildingYourOwnApps1Concepts;
             break;
-        case "Building Your Own Apps (Session 2)":
+        case "Building Your Own Apps: Level 2":
             var buildingYourOwnApps2Concepts = {};
             
             buildingYourOwnApps2Concepts.business = [];
@@ -65,7 +65,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = buildingYourOwnApps2Concepts;
             break;
-        case "Building Your Own Apps (Session 3)":
+        case "Building Your Own Apps: Level 3":
             var buildingYourOwnApps3Concepts = {};
             
             buildingYourOwnApps3Concepts.business = [];
@@ -79,7 +79,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = buildingYourOwnApps3Concepts;
             break;
-        case "Building Your Own Apps (Session 4)":
+        case "Building Your Own Apps: Level 4":
             var buildingYourOwnApps4Concepts = {};
             
             buildingYourOwnApps4Concepts.business = [];
