@@ -29,7 +29,7 @@ function getCourseConcepts(courseTitle) {
 
             buildingYourOwnApps1Concepts.business = [
                 {name:'Business Unit 1: Identifying your value proposition', y:3, color: businessColors[0]},
-                {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1] }
+                {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1]}
             ];
             buildingYourOwnApps1Concepts.business_total = 5
 
@@ -54,44 +54,123 @@ function getCourseConcepts(courseTitle) {
         case "Building Your Own Apps: Level 2":
             var buildingYourOwnApps2Concepts = {};
             
-            buildingYourOwnApps2Concepts.business = [];
-            buildingYourOwnApps2Concepts.business_total = 0
+            buildingYourOwnApps2Concepts.business = [
+                {name:'Business Unit 1: Identifying your value proposition', y:3, color: businessColors[0]},
+                {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1]}
+            ];
+            buildingYourOwnApps2Concepts.business_total = 5
             
-            buildingYourOwnApps2Concepts.coding = [];
-            buildingYourOwnApps2Concepts.coding_total = 0
+            buildingYourOwnApps2Concepts.coding = [
+                {name:'Coding Unit 1: Leveraging modern mock-up tools', y:1, color: codingColors[0]},
+                {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
+                {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
+                {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
+                {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]}
+            ];
+            buildingYourOwnApps2Concepts.coding_total = 16
             
-            buildingYourOwnApps2Concepts.design = [];
-            buildingYourOwnApps2Concepts.design_total = 0
+            buildingYourOwnApps2Concepts.design = [
+                {name:'Design Unit 1: Basic mock-up principles', y:1, color: designColors[0]},
+                {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
+                {name:'Design Unit 3: Beautifying with Bootstrap', y:2, color: designColors[2]}
+            ];
+            buildingYourOwnApps2Concepts.design_total = 6
             
             conceptsObject = buildingYourOwnApps2Concepts;
             break;
         case "Building Your Own Apps: Level 3":
             var buildingYourOwnApps3Concepts = {};
             
-            buildingYourOwnApps3Concepts.business = [];
-            buildingYourOwnApps3Concepts.business_total = 0
+            buildingYourOwnApps3Concepts.business = [
+                {name:'Business Unit 1: Identifying your value proposition', y:3, color: businessColors[0]},
+                {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1]}
+            ];
+            buildingYourOwnApps3Concepts.business_total = 5
             
-            buildingYourOwnApps3Concepts.coding = [];
-            buildingYourOwnApps3Concepts.coding_total = 0
+            buildingYourOwnApps3Concepts.coding = [
+                {name:'Coding Unit 1: Leveraging modern mock-up tools', y:1, color: codingColors[0]},
+                {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
+                {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
+                {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
+                {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]}
+            ];
+            buildingYourOwnApps3Concepts.coding_total = 16
             
-            buildingYourOwnApps3Concepts.design = [];
-            buildingYourOwnApps3Concepts.design_total = 0
+            buildingYourOwnApps3Concepts.design = [
+                {name:'Design Unit 1: Basic mock-up principles', y:1, color: designColors[0]},
+                {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
+                {name:'Design Unit 3: Beautifying with Bootstrap', y:2, color: designColors[2]}
+            ];
+            buildingYourOwnApps3Concepts.design_total = 6
             
             conceptsObject = buildingYourOwnApps3Concepts;
             break;
         case "Building Your Own Apps: Level 4":
             var buildingYourOwnApps4Concepts = {};
             
-            buildingYourOwnApps4Concepts.business = [];
-            buildingYourOwnApps4Concepts.business_total = 0
+            buildingYourOwnApps4Concepts.business = [
+                {name:'Business Unit 1: Identifying your value proposition', y:3, color: businessColors[0]},
+                {name:'Business Unit 2: Marketing your product', y: 2, color: businessColors[1]}
+            ];
+            buildingYourOwnApps4Concepts.business_total = 5
             
-            buildingYourOwnApps4Concepts.coding = [];
-            buildingYourOwnApps4Concepts.coding_total = 0
+            buildingYourOwnApps4Concepts.coding = [
+                {name:'Coding Unit 1: Leveraging modern mock-up tools', y:1, color: codingColors[0]},
+                {name:'Coding Unit 2: Launching a live site', y:3, color: codingColors[1]},
+                {name:'Coding Unit 3: Working with web visuals', y:1, color: codingColors[2]},
+                {name:'Coding Unit 4: Implementing user accounts systems', y:4, color: codingColors[3]},
+                {name:'Coding Unit 5: Storing, retrieving, and displaying database data', y:7, color: codingColors[4]}
+            ];
+            buildingYourOwnApps4Concepts.coding_total = 16
             
-            buildingYourOwnApps4Concepts.design = [];
-            buildingYourOwnApps4Concepts.design_total = 0
+            buildingYourOwnApps4Concepts.design = [
+                 {name:'Design Unit 1: Basic mock-up principles', y:1, color: designColors[0]},
+                {name:'Design Unit 2: Managing user experiences', y:3, color: designColors[1]},
+                {name:'Design Unit 3: Beautifying with Bootstrap', y:2, color: designColors[2]}
+            ];
+            buildingYourOwnApps4Concepts.design_total = 6
             
             conceptsObject = buildingYourOwnApps4Concepts;
+            break;
+        case "UC-Berkeley Volunteers Building Apps":
+            var ucBerkeleyVolunteersBuildingAppsConcepts = {};
+            
+            ucBerkeleyVolunteersBuildingAppsConcepts.business = [
+                {name: 'Business Unit 1: Buying and setting up your custom domain', y:1, color: businessColors[0]},
+                {name: 'Business Unit 2: Setting up user analysis tools', y:1, color: businessColors[1]},
+                {name: 'Business Unit 3: Optimizing your application for search engines', y:2, color: businessColors[2]},
+                {name: 'Business Unit 4: Accepting credit card payments', y:4, color: businessColors[3]},
+                {name: 'Business Unit 5: Running social media marketing campaigns', y:3, color: businessColors[4]},
+                {name: 'Business Unit 6: &ldquo;Best of Breed&rdquo; workflow + CRM tools', y:5, color: businessColors[5]},
+                {name: 'Business Unit 7: Discovering the right marketing message with A/B testing', y:6, color: businessColors[6]},
+            ];
+          
+            ucBerkeleyVolunteersBuildingAppsConcepts.business_total = 22
+            
+            ucBerkeleyVolunteersBuildingAppsConcepts.coding = [
+                {name: 'Coding Unit 1: Setting up your development environment', y:1, color: codingColors[0]},
+                {name: 'Coding Unit 2: Creating project save points to avoid lost work', y:3, color: codingColors[1]},
+                {name: 'Coding Unit 3: Just the HTML, CSS, & Javascript you need to know', y:5, color: codingColors[2]},
+                {name: 'Coding Unit 4: Collecting, storing, and retrieving data on the web', y:6, color: codingColors[3]},
+                {name: 'Coding Unit 5: Tailoring web experiences to your customers', y:3, color: codingColors[4]},
+                {name: 'Coding Unit 6: Presenting customized information', y:3, color: codingColors[5]},
+                {name: 'Coding Unit 7: Speeding up your web application\'s performance', y:2, color: codingColors[6]},
+                {name: 'Coding Unit 8: Changing your customer\'s data', y:3, color: codingColors[7]},
+                {name: 'Coding Unit 9: Troubleshooting issues', y:4, color: codingColors[8]},
+                {name: 'Coding Unit 10: Creating site notificiations', y:4, color: codingColors[9]},
+            ];
+            ucBerkeleyVolunteersBuildingAppsConcepts.coding_total = 34
+            
+            ucBerkeleyVolunteersBuildingAppsConcepts.design = [
+                {name: 'Design Unit 1: Launching a professional company landing page', y:3, color: designColors[0]},
+                {name: 'Design Unit 2: Customizing the design of your landing page', y:2, color: designColors[1]},
+                {name: 'Design Unit 3: Essential visual design principles', y:4, color: designColors[2]},
+                {name: 'Design Unit 4: Essential customer experience principles', y:3, color: designColors[3]},
+                {name: 'Design Unit 5: Enhance the feel of your site with transitions and animations', y:4, color: designColors[4]},
+            ];
+            ucBerkeleyVolunteersBuildingAppsConcepts.design_total = 16
+            
+            conceptsObject = ucBerkeleyVolunteersBuildingAppsConcepts;
             break;
         case "Turn Ideas into Apps Fast" :
             var turnideasintoAppsFastConcepts = {};
