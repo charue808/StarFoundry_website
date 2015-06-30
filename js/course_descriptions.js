@@ -25,7 +25,7 @@ function getCourseDescription(courseTitle) {
                             <p>During our first session you'll be learning how to use HTML, CSS and javaScript\
                             to build interactive websites and learn about the free, fast tools for modern,\
                             professional, highly polished websites</p>\
-                            <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                            <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
                             </a></button>";
 
             break;
@@ -44,7 +44,7 @@ function getCourseDescription(courseTitle) {
                            <p>We'll be looking at getting the web to work for you, \
                             leasing and controlling a server for free and undertanding a powerful\
                             new tool to build \"cross-platform\" apps.</p>\
-                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
                            </a></button>";
             
             break;
@@ -63,7 +63,7 @@ function getCourseDescription(courseTitle) {
                            <p>In session 3 we'll be turning your website you build in session 1\
                             into a web application, add logic for user interactions, revamp the \
                             visual flow and change the structure dynamically.</p>\
-                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
                            </a></button>";
             
             break;
@@ -82,7 +82,7 @@ function getCourseDescription(courseTitle) {
                            <p>In our final session we'll be installing a user login system, \
                             manage lasting data, secure your app and convert your app into a \
                             mobile application</p>\
-                           <button><a target=\"_blank\" href=\"http://www.harvestlearninggroup.com\">Reserve Now\
+                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
                            </a></button>";
             
             break;
