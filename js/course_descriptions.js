@@ -10,7 +10,7 @@ function getCourseDescription(courseTitle) {
     var description = "";
     
     switch(courseTitle) {
-        case "Building Your Own Apps: Level 1":
+        case "Building Your Own Apps: Session 1":
             description =   "<h3>Overview</h3>\
                             <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -29,7 +29,7 @@ function getCourseDescription(courseTitle) {
                             </a></button>";
 
             break;
-        case "Building Your Own Apps: Level 2":
+        case "Building Your Own Apps: Session 2":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -48,7 +48,7 @@ function getCourseDescription(courseTitle) {
                            </a></button>";
             
             break;
-        case "Building Your Own Apps: Level 3":
+        case "Building Your Own Apps: Session 3":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
@@ -67,7 +67,7 @@ function getCourseDescription(courseTitle) {
                            </a></button>";
             
             break;
-        case "Building Your Own Apps: Level 4":
+        case "Building Your Own Apps: Session 4":
             description = "<h3>Overview</h3>\
                           <p>Build Your Own Apps is a 4 session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
