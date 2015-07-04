@@ -8,11 +8,17 @@
 
 function getCourseDescription(courseTitle) {
     var description = "";
+	
+	var reserveButtonHTML =  "<a class=\"pure-button\" style=\"color: white; font-size: 1.5em; border-radius: 4px; \
+							    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); \
+           					    background: rgb(66, 184, 221);\"  target=\"_blank\" \
+							    href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\"> Reserve Now\
+                              </a>"
     
     switch(courseTitle) {
         case "Building Your Own Apps: Session 1":
             description =   "<h3>Overview</h3>\
-                            <p>Build Your Own Apps is a 4 session series that provides \
+                            <p>Build Your Own Apps is a four session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
                             environment in which to explore powerful new tools for building \
                             web and mobile applications.</p> \
@@ -24,14 +30,12 @@ function getCourseDescription(courseTitle) {
                             <h3>What to expect in Session 1</h3>\
                             <p>During our first session you'll be learning how to use HTML, CSS and javaScript\
                             to build interactive websites and learn about the free, fast tools for modern,\
-                            professional, highly polished websites</p>\
-                            <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
-                            </a></button>";
+                            professional, highly polished websites</p> " + reserveButtonHTML;
 
             break;
         case "Building Your Own Apps: Session 2":
             description = "<h3>Overview</h3>\
-                          <p>Build Your Own Apps is a 4 session series that provides \
+                          <p>Build Your Own Apps is a four session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
                             environment in which to explore powerful new tools for building \
                             web and mobile applications.</p>\
@@ -43,14 +47,12 @@ function getCourseDescription(courseTitle) {
                            <h3>What to expect in Session 2</h3>\
                            <p>We'll be looking at getting the web to work for you, \
                             leasing and controlling a server for free and undertanding a powerful\
-                            new tool to build \"cross-platform\" apps.</p>\
-                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
-                           </a></button>";
+                            new tool to build \"cross-platform\" apps.</p> " + reserveButtonHTML;
             
             break;
         case "Building Your Own Apps: Session 3":
             description = "<h3>Overview</h3>\
-                          <p>Build Your Own Apps is a 4 session series that provides \
+                          <p>Build Your Own Apps is a four session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
                             environment in which to explore powerful new tools for building \
                             web and mobile applications.</p>\
@@ -62,14 +64,12 @@ function getCourseDescription(courseTitle) {
                            <h3>What to expect in Session 3</h3>\
                            <p>In session 3 we'll be turning your website you build in session 1\
                             into a web application, add logic for user interactions, revamp the \
-                            visual flow and change the structure dynamically.</p>\
-                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
-                           </a></button>";
+                            visual flow and change the structure dynamically.</p>" + reserveButtonHTML;
             
             break;
         case "Building Your Own Apps: Session 4":
             description = "<h3>Overview</h3>\
-                          <p>Build Your Own Apps is a 4 session series that provides \
+                          <p>Build Your Own Apps is a four session series that provides \
                             entrepreneurs and community members a hands-on, collaborative \
                             environment in which to explore powerful new tools for building \
                             web and mobile applications.</p>\
@@ -81,9 +81,7 @@ function getCourseDescription(courseTitle) {
                            <h3>What to expect in Session 4</h3>\
                            <p>In our final session we'll be installing a user login system, \
                             manage lasting data, secure your app and convert your app into a \
-                            mobile application</p>\
-                           <button><a target=\"_blank\" href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\">Reserve Now\
-                           </a></button>";
+                            mobile application</p>" + reserveButtonHTML;
             
             break;
         case "Turn Ideas into Apps Fast":
