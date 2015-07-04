@@ -13,7 +13,7 @@ function getCourseDescription(courseTitle) {
 							    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); \
            					    background: rgb(66, 184, 221);\"  target=\"_blank\" \
 							    href=\"http://www.eventbrite.com/e/starfoundry-build-your-own-app-tickets-17578563958?aff=es2\"> Reserve Now\
-                              </a>"
+                              </a>";
     
     switch(courseTitle) {
         case "Building Your Own Apps: Session 1":
