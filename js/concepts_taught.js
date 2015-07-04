@@ -132,7 +132,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = buildingYourOwnApps4Concepts;
             break;
-        case "UC-Berkeley Volunteers Building Apps":
+        case "Changemaker Apprenticeship Program":
             var ucBerkeleyVolunteersBuildingAppsConcepts = {};
             
             ucBerkeleyVolunteersBuildingAppsConcepts.business = [
