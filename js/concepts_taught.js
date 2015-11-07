@@ -132,7 +132,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = buildingYourOwnApps4Concepts;
             break;
-        case "Changemaker Apprenticeship Program":
+        case "Code for Community Apprenticeship":
             var ucBerkeleyVolunteersBuildingAppsConcepts = {};
             
             ucBerkeleyVolunteersBuildingAppsConcepts.business = [
@@ -320,7 +320,7 @@ function getCourseConcepts(courseTitle) {
             
             conceptsObject = rapidPrototypingForDesignersConcepts;
             break;
-        case "Tinkering with Twitter (for Schools)" :
+        case "Build Your Own Apps (for Schools)" :
             var tinkeringWithTwitterSchoolsConcepts = {};
             
             tinkeringWithTwitterSchoolsConcepts.business = [

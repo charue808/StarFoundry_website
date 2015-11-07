@@ -100,7 +100,7 @@ function getCourseDescription(courseTitle) {
                               course, and bring a wireless internet-enabled device with a keyboard.</p>\
                               </p>";
             break;
-             case "Changemaker Apprenticeship Program":
+             case "Code for Community Apprenticeship":
             description =   " <p>Aspiring changemakers are invited to join our apprenticeship program, where \
 							you'll learn how to turn a dream into a production-ready web \
                               product for a public benefit organization in your community. \
@@ -143,7 +143,7 @@ function getCourseDescription(courseTitle) {
                                 application in <em>hours</em> instead of weeks or months.</p> \
                              <p><b>Requirements:</b> Some design experience, knowledge of basic HTML + CSS</p>";
             break;
-        case "Tinkering with Twitter (for Schools)" :
+        case "Build Your Own Apps (for Schools)" :
             description =   "<p>In this course, our students dive right into the real world of building \
                                 world-changing products, by developing a version of the popular web tools, Twitter \
                                 from the ground up. This version of Twitter was so successful, it evolved into one \
